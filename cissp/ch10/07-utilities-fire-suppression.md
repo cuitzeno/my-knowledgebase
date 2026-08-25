@@ -1,6 +1,6 @@
 ---
 title: 07 · 设施环境：供电/噪声/温湿/水患与火灾抑制
-parent: 第 10 章
+parent: 第 10 章 · 物理安全要求
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 7
 ---

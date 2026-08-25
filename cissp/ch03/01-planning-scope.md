@@ -1,6 +1,6 @@
 ---
 title: Ch3-01 业务连续性规划与项目范围（BCP & Project Scope）
-parent: 第 3 章
+parent: 第 3 章 · 业务连续性计划
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 1
 ---

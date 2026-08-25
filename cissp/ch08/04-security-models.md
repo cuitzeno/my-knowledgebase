@@ -1,6 +1,6 @@
 ---
 title: Ch8-04 安全模型：TCB、BLP、Biba、Clark-Wilson、Brewer-Nash
-parent: 第 8 章
+parent: 第 8 章 · 安全模型、设计与保障能力的原则
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

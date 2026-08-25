@@ -1,6 +1,6 @@
 ---
 title: 04 · 门禁凭证：工牌/智能卡/近程设备与访问滥用
-parent: 第 10 章
+parent: 第 10 章 · 物理安全要求
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

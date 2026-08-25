@@ -1,6 +1,6 @@
 ---
 title: Web 应用攻击：XSS、CSRF、SSRF、会话劫持（Web App Exploits）
-parent: 第 21 章
+parent: 第 21 章 · 恶意代码与应用攻击
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 5
 ---

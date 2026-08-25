@@ -1,6 +1,6 @@
 ---
 title: ① 一句话秒懂
-parent: 第 17 章
+parent: 第 17 章 · 事件预防与响应
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 6
 ---

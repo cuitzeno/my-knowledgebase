@@ -1,6 +1,6 @@
 ---
 title: Ch8-05 通用准则（Common Criteria）与运行授权（ATO）
-parent: 第 8 章
+parent: 第 8 章 · 安全模型、设计与保障能力的原则
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 5
 ---

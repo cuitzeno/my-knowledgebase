@@ -1,6 +1,6 @@
 ---
 title: 04 · 多因子、无密码与 FIDO（MFA / Passwordless / FIDO）
-parent: 第 13 章
+parent: 第 13 章 · 身份与认证管理
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

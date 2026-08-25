@@ -1,6 +1,6 @@
 ---
 title: Ch9-09 基础安全保护机制与常见架构缺陷
-parent: 第 9 章
+parent: 第 9 章 · 安全漏洞、威胁与对策
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 9
 ---

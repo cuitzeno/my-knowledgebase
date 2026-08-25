@@ -1,6 +1,6 @@
 ---
 title: 02 建立信息与资产处理要求（Establishing Handling Requirements）
-parent: 第 5 章
+parent: 第 5 章 · 保护资产安全
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 2
 ---

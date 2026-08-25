@@ -1,6 +1,6 @@
 ---
 title: Ch3-04 计划批准与实施（Plan Approval & Implementation）
-parent: 第 3 章
+parent: 第 3 章 · 业务连续性计划
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

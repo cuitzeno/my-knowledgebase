@@ -1,6 +1,6 @@
 ---
 title: Ch9-05 物联网、边缘计算、嵌入式与信息物理系统
-parent: 第 9 章
+parent: 第 9 章 · 安全漏洞、威胁与对策
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 5
 ---

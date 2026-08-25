@@ -1,6 +1,6 @@
 ---
 title: Ch2-07 安全意识、培训与教育（Security Awareness, Training, Education）
-parent: 第 2 章
+parent: 第 2 章 · 人员安全与风险管理概念
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 7
 ---

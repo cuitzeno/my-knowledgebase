@@ -1,6 +1,6 @@
 ---
 title: 数据库与数据仓库安全（Databases, Data Warehousing & Security）
-parent: 第 20 章
+parent: 第 20 章 · 软件开发安全
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 2
 ---

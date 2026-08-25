@@ -1,6 +1,6 @@
 ---
 title: 07 · 应用层协议与流量分析（Ch11 · Domain 4）
-parent: 第 11 章
+parent: 第 11 章 · 安全网络架构与组件
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 7
 ---

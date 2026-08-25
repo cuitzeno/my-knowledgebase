@@ -1,6 +1,6 @@
 ---
 title: Threat Modeling（威胁建模）
-parent: 第 1 章
+parent: 第 1 章 · 安全治理与原则政策
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 7
 ---

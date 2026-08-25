@@ -1,6 +1,6 @@
 ---
 title: 01 非对称加密算法（Asymmetric Algorithms）
-parent: 第 7 章
+parent: 第 7 章 · PKI 与密码应用
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 1
 ---

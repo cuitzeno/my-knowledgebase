@@ -1,6 +1,6 @@
 ---
 title: Ch9-08 移动设备安全
-parent: 第 9 章
+parent: 第 9 章 · 安全漏洞、威胁与对策
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 8
 ---

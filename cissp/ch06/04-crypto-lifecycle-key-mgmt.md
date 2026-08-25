@@ -1,6 +1,6 @@
 ---
 title: 04 密码学生命周期与密钥治理（Cryptographic Life Cycle & Key Management）
-parent: 第 6 章
+parent: 第 6 章 · 密码学与对称密钥算法
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

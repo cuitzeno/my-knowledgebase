@@ -1,6 +1,6 @@
 ---
 title: 03 · ABAC / 规则基 / 风险基 访问控制
-parent: 第 14 章
+parent: 第 14 章 · 访问控制与监控
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 3
 ---

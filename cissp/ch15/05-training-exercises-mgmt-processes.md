@@ -1,6 +1,6 @@
 ---
 title: ① 一句话秒懂
-parent: 第 15 章
+parent: 第 15 章 · 安全评估与测试
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 5
 ---

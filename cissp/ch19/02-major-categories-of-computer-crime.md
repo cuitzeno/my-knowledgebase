@@ -1,6 +1,6 @@
 ---
 title: 计算机犯罪的主要类别（Major Categories of Computer Crime）
-parent: 第 19 章
+parent: 第 19 章 · 调查与道德
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 2
 ---

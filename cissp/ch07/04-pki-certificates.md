@@ -1,6 +1,6 @@
 ---
 title: 04 PKI 与数字证书（Public Key Infrastructure）
-parent: 第 7 章
+parent: 第 7 章 · PKI 与密码应用
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 4
 ---

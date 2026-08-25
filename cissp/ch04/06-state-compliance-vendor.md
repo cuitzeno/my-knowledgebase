@@ -1,6 +1,6 @@
 ---
 title: Ch4-06 州隐私法、合规标准与供应商治理（State Laws, PCI DSS & Vendor Governance）
-parent: 第 4 章
+parent: 第 4 章 · 法律、法规与合规
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 6
 ---

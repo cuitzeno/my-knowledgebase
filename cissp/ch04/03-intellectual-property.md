@@ -1,6 +1,6 @@
 ---
 title: Ch4-03 知识产权（Intellectual Property, IP）
-parent: 第 4 章
+parent: 第 4 章 · 法律、法规与合规
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 3
 ---

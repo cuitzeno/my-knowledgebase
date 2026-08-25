@@ -1,6 +1,6 @@
 ---
 title: 01 密码学目标与基础概念（Cryptographic Foundations）
-parent: 第 6 章
+parent: 第 6 章 · 密码学与对称密钥算法
 grand_parent: CISSP 认证安全工程师知识库
 nav_order: 1
 ---
