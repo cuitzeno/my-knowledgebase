@@ -118,7 +118,7 @@ git commit -m "feat(<theme>): add NN-<slug> …"
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '我的知识库', repo: 'cuitzeno/mykb',
+      name: '我的知识库', repo: 'cuitzeno/my-knowledgebase',
       loadSidebar: true, subMaxLevel: 2, search: 'auto', homepage: 'README.md'
     }
   </script>

@@ -1,7 +1,9 @@
-# docsify 无需构建；若本地预览产生缓存可忽略
-.jekyll-cache/
+# 系统/编辑器噪音
+.DS_Store
+*.tmp
+*.swp
 
-# 本地提取用的虚拟环境
+# 本地提取用的虚拟环境（learning-kb 技能）
 .agents/venv/
 
 # 原始素材不入库（文章为原创讲解）

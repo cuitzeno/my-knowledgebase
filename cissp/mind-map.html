@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CISSP 八域全局思维导图</title>
+<style>
+  :root{
+    --bg:#f7f9fc; --card:#ffffff; --ink:#1f2a44; --muted:#67748f;
+    --d1:#4e79a7; --d2:#59a14f; --d3:#f28e2b; --d4:#e15759;
+    --d5:#76b7b2; --d6:#edc948; --d7:#b07aa1; --d8:#9c755f;
+    --line:#c9d4e3;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);padding:24px;}
+  h1{font-size:24px;margin:0 0 4px;font-weight:700;}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:20px;}
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+  .legend span{display:inline-flex;align-items:center;gap:6px;font-size:12px;
+    background:var(--card);padding:5px 10px;border-radius:14px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .dot{width:11px;height:11px;border-radius:50%;display:inline-block;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;}
+  .domain{background:var(--card);border-radius:14px;padding:16px 16px 14px;
+    box-shadow:0 2px 10px rgba(31,42,68,.08);border-top:5px solid var(--c);}
+  .domain h2{font-size:16px;margin:0 0 2px;display:flex;align-items:center;gap:8px;}
+  .domain .wt{font-size:12px;color:var(--muted);margin-bottom:12px;}
+  .ch{display:flex;gap:8px;align-items:flex-start;padding:6px 8px;border-radius:8px;
+    transition:.15s;cursor:default;}
+  .ch:hover{background:#eef3fb;}
+  .ch .no{flex:0 0 auto;width:42px;font-size:12px;font-weight:700;color:var(--c);
+    background:color-mix(in srgb,var(--c) 12%,#fff);border-radius:6px;text-align:center;padding:3px 0;}
+  .ch .tt{font-size:13px;line-height:1.4;}
+  .ch .tt b{font-weight:600;}
+  .ch .tt small{color:var(--muted);display:block;font-size:11px;margin-top:1px;}
+  .foot{margin-top:26px;font-size:12px;color:var(--muted);text-align:center;}
+</style>
+</head>
+<body>
+<h1>CISSP 八域全局思维导图</h1>
+<div class="sub">教材：ISC2 CISSP Official Study Guide 10th Edition (Sybex 2024) · 21 章 / 8 大域 · 本图按域-章节结构梳理，配套各章「加厚版通俗短文」</div>
+
+<div class="legend">
+  <span><i class="dot" style="background:var(--d1)"></i>Domain 1 安全与风险管理</span>
+  <span><i class="dot" style="background:var(--d2)"></i>Domain 2 资产安全</span>
+  <span><i class="dot" style="background:var(--d3)"></i>Domain 3 安全架构与工程</span>
+  <span><i class="dot" style="background:var(--d4)"></i>Domain 4 通信与网络安全</span>
+  <span><i class="dot" style="background:var(--d5)"></i>Domain 5 身份与访问管理</span>
+  <span><i class="dot" style="background:var(--d6)"></i>Domain 6 安全评估与测试</span>
+  <span><i class="dot" style="background:var(--d7)"></i>Domain 7 安全运营</span>
+  <span><i class="dot" style="background:var(--d8)"></i>Domain 8 软件开发安全</span>
+</div>
+
+<div class="grid">
+
+  <!-- D1 -->
+  <div class="domain" style="--c:var(--d1)">
+    <h2><i class="dot" style="background:var(--d1)"></i>Domain 1 安全与风险管理</h2>
+    <div class="wt">权重 ~16% · Ch1–Ch5</div>
+    <div class="ch"><div class="no">Ch1</div><div class="tt"><b>安全治理与原则政策</b><small>Security 101 / CIA·DAD·AAA / 治理 / 政策·标准·基线 / 威胁建模 / 供应链</small></div></div>
+    <div class="ch"><div class="no">Ch2</div><div class="tt"><b>人事安全与风险管理</b><small>人事生命周期 / 风险核心·评估·应对 / 社会工程 / 安全意识培训</small></div></div>
+    <div class="ch"><div class="no">Ch3</div><div class="tt"><b>业务连续性规划 BCP</b><small>规划范围 / BIA（RTO·RPO·MTD）/ 连续性计划 / 审批演练</small></div></div>
+    <div class="ch"><div class="no">Ch4</div><div class="tt"><b>法律、法规与合规</b><small>法律体系 / 主要联邦法 / 知识产权 / 隐私法 / 软件许可·进出口</small></div></div>
+    <div class="ch"><div class="no">Ch5</div><div class="tt"><b>资产保护</b><small>识别分级 / 留存·净化·销毁 / 数据保护(DRM·令牌化) / 数据角色 / 安全基线</small></div></div>
+  </div>
+
+  <!-- D2 -->
+  <div class="domain" style="--c:var(--d2)">
+    <h2><i class="dot" style="background:var(--d2)"></i>Domain 2 资产安全</h2>
+    <div class="wt">权重 ~10% · 并入 Ch5（见 D1 Ch5）</div>
+    <div class="ch"><div class="no">↳</div><div class="tt"><b>资产安全核心</b><small>数据分级与处理 / 留存销毁 / 隐私保护 / 数据角色（Owner·Custodian·User）</small></div></div>
+    <div class="ch"><div class="no">·</div><div class="tt"><b>与 D1 重叠</b><small>Sybex 将资产安全内容并入 Ch5，CISSP 考纲单列 Domain 2</small></div></div>
+  </div>
+
+  <!-- D3 -->
+  <div class="domain" style="--c:var(--d3)">
+    <h2><i class="dot" style="background:var(--d3)"></i>Domain 3 安全架构与工程</h2>
+    <div class="wt">权重 ~13% · Ch6–Ch10</div>
+    <div class="ch"><div class="no">Ch6</div><div class="tt"><b>密码学与对称算法</b><small>密码目标 / 对称vs非对称 / DES·3DES·AES·模式 / 生命周期·密钥管理</small></div></div>
+    <div class="ch"><div class="no">Ch7</div><div class="tt"><b>PKI 与密码应用</b><small>RSA·DH·ECC / 哈希 / 数字签名·HMAC / X.509·CA / 密码攻击 / TLS·HSM</small></div></div>
+    <div class="ch"><div class="no">Ch8</div><div class="tt"><b>安全模型、设计与能力</b><small>安全设计原则 / 11条原则 / BLP·Biba·Clark-Wilson / 通用准则·ATO / TPM</small></div></div>
+    <div class="ch"><div class="no">Ch9</div><div class="tt"><b>漏洞、威胁与对策</b><small>共享责任 / 硬件架构 / 内存·固件 / 系统类型 / IoT / 虚拟化 / 移动</small></div></div>
+    <div class="ch"><div class="no">Ch10</div><div class="tt"><b>物理安全（实现）</b><small>设施·CPTED / 控制分类·MTBF / 布线间·SCIF / 工牌·智能卡 / 入侵检测 / 介质 / 供电·消防 / 周界</small></div></div>
+  </div>
+
+  <!-- D4 -->
+  <div class="domain" style="--c:var(--d4)">
+    <h2><i class="dot" style="background:var(--d4)"></i>Domain 4 通信与网络安全</h2>
+    <div class="wt">权重 ~13% · Ch11–Ch13</div>
+    <div class="ch"><div class="no">Ch11</div><div class="tt"><b>安全网络架构与组件</b><small>OSI·TCP-IP / 传输层·DNS / IP·ARP·ICMP / 多层协议 / 组件·DMZ / 分段 / 应用层·嗅探 / 无线 / 卫星·蜂窝·CDN</small></div></div>
+    <div class="ch"><div class="no">Ch12</div><div class="tt"><b>安全通信信道</b><small>VPN / TLS / IPSec / SSH / VLAN / NAC 网络访问控制</small></div></div>
+    <div class="ch"><div class="no">Ch13</div><div class="tt"><b>安全网络管理</b><small>监控 / 日志 / IDS·IPS / SIEM</small></div></div>
+  </div>
+
+  <!-- D5 -->
+  <div class="domain" style="--c:var(--d5)">
+    <h2><i class="dot" style="background:var(--d5)"></i>Domain 5 身份与访问管理</h2>
+    <div class="wt">权重 ~13% · Ch14</div>
+    <div class="ch"><div class="no">Ch14</div><div class="tt"><b>身份与访问管理控制</b><small>身份治理 / 认证因素 / SSO·Federation / 授权模型 / 权限提升·rootkit 防护</small></div></div>
+  </div>
+
+  <!-- D6 -->
+  <div class="domain" style="--c:var(--d6)">
+    <h2><i class="dot" style="background:var(--d6)"></i>Domain 6 安全评估与测试</h2>
+    <div class="wt">权重 ~12% · Ch15</div>
+    <div class="ch"><div class="no">Ch15</div><div class="tt"><b>安全评估与测试</b><small>测试·评估·审计(NIST800-53A·SOC) / 漏洞扫描(SCAP·Nmap) / 渗透测试 / 软件测试(SAST·DAST) / 演练(红蓝紫队)</small></div></div>
+  </div>
+
+  <!-- D7 -->
+  <div class="domain" style="--c:var(--d7)">
+    <h2><i class="dot" style="background:var(--d7)"></i>Domain 7 安全运营</h2>
+    <div class="wt">权重 ~16% · Ch16–Ch18</div>
+    <div class="ch"><div class="no">Ch16</div><div class="tt"><b>安全运营基础</b><small>应尽·应担责 / 需知·最小权限·职责分离 / 人员安全 / 资产管理 / 云·托管服务 / 配置·变更 / 补丁</small></div></div>
+    <div class="ch"><div class="no">Ch17</div><div class="tt"><b>安全运营进阶（事件）</b><small>事件生命周期 / 预防vs检测 / DoS·僵尸·MITM / IDS·IPS·蜜罐·防火墙 / 日志·监控(SIEM) / SOAR·KillChain</small></div></div>
+    <div class="ch"><div class="no">Ch18</div><div class="tt"><b>业务连续性（灾难恢复）</b><small>灾害本质 / 弹性·HA·RAID / 恢复策略(冷热站) / 备份(全·增·差) / 演练 / 培训文档</small></div></div>
+  </div>
+
+  <!-- D8 -->
+  <div class="domain" style="--c:var(--d8)">
+    <h2><i class="dot" style="background:var(--d8)"></i>Domain 8 软件开发安全</h2>
+    <div class="wt">权重 ~10% · Ch19–Ch21</div>
+    <div class="ch"><div class="no">Ch19</div><div class="tt"><b>调查、取证与道德</b><small>调查类型 / 证据四类型·最佳证据规则 / 取证(IOCE·写阻断·Locard) / 计算机犯罪七类 / (ISC)² 道德准则</small></div></div>
+    <div class="ch"><div class="no">Ch20</div><div class="tt"><b>系统开发控制</b><small>SDLC(瀑布·螺旋·敏捷) / CMM·IDEAL·SAMM / 数据库(RDBMS·ACID·聚合·推理) / AI(专家·ML·NN) / 存储威胁</small></div></div>
+    <div class="ch"><div class="no">Ch21</div><div class="tt"><b>恶意代码与应用攻击</b><small>恶意代码(病毒·蠕虫·木马·勒索) / 防护(EDR·UEBA) / 应用攻击(溢出·TOC·后门·提权) / 注入(SQL·命令) / XSS·CSRF·SSRF / 输入校验·WAF / 安全编码</small></div></div>
+  </div>
+
+</div>
+
+<div class="foot">共 8 域 · 21 章 · 配套短文已落盘 <code>cissp-notes/</code> 各 <code>chNN/</code> 目录（加厚版 800–1200 字/篇）。点击对应章节文件即可阅读。</div>
+</body>
+</html>
