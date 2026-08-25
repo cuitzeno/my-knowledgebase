@@ -38,9 +38,13 @@ metadata:
 ### 1. 脚手架（若不存在则创建）
 - 若当前目录不是 git 仓库：`git init`（仅本地，不建远程、不推送）。
 - 确保仓库根有这些文件（缺哪个建哪个，不破坏已有）：
-- `_config.yml`：见下方"脚手架片段"。`title` 用根总目录名（如 "我的知识库"）。
-- `.gitignore`：`_site/`、` .jekyll-cache/`、`.agents/venv/`、`source-files/`。
-- 根 `index.md`：总目录（见步骤 5）。
+- `.nojekyll`：空文件，禁用 GitHub Pages 的 Jekyll，确保 `_sidebar.md` 等 `_` 开头文件被正常服务。
+- `index.html`：docsify 引导页（见下方"脚手架片段"），从 CDN 加载 docsify + 搜索插件。
+- `_sidebar.md`：根导航（见步骤 5）。
+- `README.md`：站点首页/总目录（见步骤 5）。
+- `.gitignore`：`.agents/venv/`、`source-files/`、`**/node_modules/`、`**/.env`。
+
+> 不用 Jekyll、无构建步骤：push 后 GitHub Pages 直接服务静态文件，阅读时由浏览器渲染 Markdown。
 
 ### 2. 提取素材
 - **PDF**：`.agents/venv/bin/python <skill>/scripts/extract_pdf.py <source> --out /tmp/<theme>.txt`
@@ -72,18 +76,10 @@ metadata:
 
 ### 5. 逐篇生成
 对大纲每篇，按 `references/article-template.md` 生成 `./<theme>/NN-<中文标题>.md`：
-- front matter：
-  ```yaml
-  ---
-  title: "<标题>"
-  parent: "<theme>"
-  nav_order: NN
-  ---
-  ```
-  （`parent`/`nav_order` 供 just-the-docs 侧边栏分组与排序）
+- **不要写 Jekyll front matter**（docsify 会把 `---` 块当正文显示）。文章首行直接是 `# 标题`；排序由 `_sidebar.md` 链接顺序 + `NN-` 文件名决定。
 - `NN` = 主题内递增两位序号。**先扫描 `<theme>/` 现有最大 NN，从其后续编**（见步骤 6）。
-- 末行"下一篇：…"先留占位，全部生成后回填（`references/article-template.md` 末句规则）。
-- `--with-images` 时：每篇配套 `imgs/NN-cover.jpg` + 封面 prompt（风格复用 baoyu 模板）。
+- 末行"下一篇：…"先留占位，全部生成后回填（`references/article-template.md` 末句规则）。"下一篇"用相对链接，如 `(02-xxx.md)`。
+- `--with-images` 时：每篇配套 `imgs/NN-cover.jpg` + 封面 prompt（风格复用 baoyu 模板），并嵌入 `![alt](imgs/xxx.png)`。
 
 ### 6. 增量规则（核心）
 - 运行前扫描 `./<theme>/` 现有 `NN-*.md`，取最大序号 `M`；新文章从 `M+1` 起编。
@@ -91,9 +87,9 @@ metadata:
 - 新 `theme`：建文件夹即可，根 `index.md` 重算。
 
 ### 7. 生成索引 / 导航
-- 每主题父页 `./<theme>/<theme>.md`（front matter `parent: ""`、`nav_order` 按主题序），
-  正文放主题简介 + "本系列共 N 篇"；just-the-docs 会把它作为侧边栏分组节点。
-- 根 `index.md`：列出全部主题（链接到各自父页）+ 一句话简介。
+- 每主题父页 `./<theme>/<theme>.md`：正文放主题简介 + "本系列共 N 篇"列表（相对链接到各篇）；作为 docsify 侧边栏里该主题的分组入口。
+- 根 `_sidebar.md`：列出全部主题（链接到各自父页）+ 其下各篇文章（相对链接），按 `NN-` 顺序；docsify 据此渲染左侧导航。
+- 根 `README.md`：站点首页，列全部主题入口 + 一句话简介。
 - 回填每篇"下一篇"指针；最后一篇写"系列完"。
 
 ### 8. 提交（不推送）
@@ -108,21 +104,40 @@ git commit -m "feat(<theme>): add NN-<slug> …"
 
 ## 脚手架片段
 
-`_config.yml`：
-```yaml
-title: 我的知识库
-description: 资料读透后生成的多主题知识库
-remote_theme: just-the-docs/just-the-docs
-theme: just-the-docs
-plugins:
-  - jekyll-remote-theme
-search_enabled: true
-aux_links:
-  在 GitHub 上编辑: https://github.com/cuitzeno/mykb
+`index.html`（docsify 引导页，CDN 加载，零构建）：
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '我的知识库', repo: 'cuitzeno/mykb',
+      loadSidebar: true, subMaxLevel: 2, search: 'auto', homepage: 'README.md'
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
 ```
 
-> 远程主题由 GitHub Pages 原生构建，无需本地 Gemfile。用户首次开启 Pages：
-> 仓库 Settings → Pages → Source 选主分支根目录。
+`_sidebar.md`（根导航，按主题分组）：
+```markdown
+- [我的知识库](/)
+- [CISSP 认证安全工程师知识库](cissp/cissp.md)
+  - [CIA 三要素](cissp/01-CIA三要素.md)
+  - [安全治理与合规驱动](cissp/02-安全治理与合规驱动.md)
+```
+
+> 无需 Jekyll、无构建。用户首次开启 Pages：仓库 Settings → Pages → Source 选主分支根目录；
+> 因有 `.nojekyll`，GitHub 直接以静态文件服务，`_sidebar.md` 等正常生效。阅读时浏览器从 CDN 加载 docsify 渲染 Markdown。
 
 ## 版权
 文章仅标注"参考来源"，做原创讲解，**不复制素材原文**（尤其 CISSP 等版权资料）。

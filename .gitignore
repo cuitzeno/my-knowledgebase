@@ -1,7 +1,5 @@
-# Jekyll 构建产物（GitHub Pages 远程主题自动构建，无需本地产物）
-_site/
+# docsify 无需构建；若本地预览产生缓存可忽略
 .jekyll-cache/
-.jekyll-metadata
 
 # 本地提取用的虚拟环境
 .agents/venv/

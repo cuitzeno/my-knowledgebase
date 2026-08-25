@@ -1,8 +1,3 @@
----
-title: "CIA 三要素：保密性、完整性、可用性"
-parent: cissp
-nav_order: 1
----
 
 # CIA 三要素：保密性、完整性、可用性
 
