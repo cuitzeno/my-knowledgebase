@@ -1,10 +1,11 @@
 ---
-title: "Cookie 与会话管理（Secure/HttpOnly/SameSite）"
-parent: "Web 安全与开发基础实战知识库"
-nav_order: 4
+title: "Cookie 与会话管理"
+parent: "传输、会话与缓存"
+grand_parent: "Web 安全与开发基础实战知识库"
+nav_order: 1
 ---
 
-# Web 基础｜Cookie 与会话管理（Secure/HttpOnly/SameSite）
+# 概念｜Cookie 与会话管理（Secure/HttpOnly/SameSite）
 
 HTTP 无状态，靠 Cookie 记住"你是谁"。Cookie 的三个属性直接决定会话安全。
 
@@ -23,18 +24,18 @@ HTTP 无状态，靠 Cookie 记住"你是谁"。Cookie 的三个属性直接决�
 - **HttpOnly**：禁止 JS 通过 `document.cookie` 读取，抗 XSS 偷 Cookie。
 - **SameSite**：`Strict`/`Lax` 限制跨站请求携带 Cookie，缓解 CSRF；`None` 需配合 Secure。
 - **生命周期**：会话 Cookie（关浏览器失效）vs 持久 Cookie；超时/登出要真销毁服务端会话。
-- **与令牌关系**：现代也常用 `Authorization: Bearer <JWT>`（见第 14 篇），但 Cookie 仍是主力会话机制。
+- **与令牌关系**：现代也常用 `Authorization: Bearer <JWT>`（见④组 JWT 篇），但 Cookie 仍是主力会话机制。
 
 ## ④ 常见误区
 
-- **误区 1**：只设 HttpOnly 不设 Secure。HTTPS 下仍可能被降级明文传。
-- **误区 2**：SameSite=None 又不开 Secure。会被中间人拿到。
-- **误区 3**：前端登出=安全。必须服务端使会话失效，否则令牌仍可复用。
+- 只设 HttpOnly 不设 Secure：HTTPS 下仍可能被降级明文传。
+- SameSite=None 又不开 Secure：会被中间人拿到。
+- 前端登出=安全：必须服务端使会话失效，否则令牌仍可复用。
 
 ## ⑤ 一句话小结
 
-Cookie 会话安全三件套：Secure（仅 HTTPS 传）、HttpOnly（防 JS 偷）、SameSite（抗 CSRF）；再配合正确的超时与登出销毁。
+Cookie 会话安全三件套：Secure（仅 HTTPS 传）、HttpOnly（防 JS 偷）、SameSite（抗 CSRF）；再配合正确超时与登出销毁。
 
-*下一篇：TLS 握手与 HTTPS*
+*下一篇：[TLS 握手与 HTTPS](02-tls与https.md)*
 
 > 参考来源：https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
