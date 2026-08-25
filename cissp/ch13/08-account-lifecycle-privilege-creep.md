@@ -1,3 +1,10 @@
+---
+title: 08 · 身份生命周期与权限审查（Provisioning Life Cycle）
+parent: 第 13 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 8
+---
+
 # 08 · 身份生命周期与权限审查（Provisioning Life Cycle）
 
 ## 一句话秒懂

@@ -1,3 +1,10 @@
+---
+title: 05 · 安全网络组件（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 · 安全网络组件（Ch11 · Domain 4）
 
 > 内网、外网、DMZ 怎么划？Hub/Switch/Router 各管什么域？跳板机、传感器、收集器是什么角色？这一篇把「网络里的硬件与逻辑部件」梳理清楚。

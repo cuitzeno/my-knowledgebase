@@ -1,3 +1,10 @@
+---
+title: 职业道德与行为准则（Ethics & Codes of Conduct）
+parent: 第 19 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # 职业道德与行为准则（Ethics & Codes of Conduct）
 
 > 来源：Chapter 19 · Ethics

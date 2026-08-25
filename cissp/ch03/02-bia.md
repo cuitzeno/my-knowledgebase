@@ -1,3 +1,10 @@
+---
+title: Ch3-02 业务影响分析（Business Impact Analysis, BIA）
+parent: 第 3 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # Ch3-02 业务影响分析（Business Impact Analysis, BIA）
 
 > 一句话秒懂：BIA 就是"算清楚——公司哪些业务最不能停、停多久会死、会丢多少钱"，是 BCP 的心脏。

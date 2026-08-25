@@ -1,3 +1,10 @@
+---
+title: 知识型 AI 系统与存储威胁（AI/Expert Systems & Storage Threats）
+parent: 第 20 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # 知识型 AI 系统与存储威胁（AI/Expert Systems & Storage Threats）
 
 > 来源：Chapter 20 · Understanding Knowledge-Based Systems / Storage Threats

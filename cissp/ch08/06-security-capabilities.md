@@ -1,3 +1,10 @@
+---
+title: Ch8-06 信息系统的安全能力
+parent: 第 8 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # Ch8-06 信息系统的安全能力
 
 > 所属域：Domain 3 Security Architecture and Engineering

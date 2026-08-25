@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 17 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # ① 一句话秒懂
 
 日志与监控（Logging & Monitoring）是"让一切行为可追溯、可问责"的基础：日志记录谁在何时做了什么，监控+审计 trail 让内鬼无处隐藏、让事故可重建、让起诉有证据。SIEM 把全网信源汇总智能分析。

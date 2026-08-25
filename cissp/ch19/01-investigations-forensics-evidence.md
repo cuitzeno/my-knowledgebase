@@ -1,3 +1,10 @@
+---
+title: 调查、取证与证据（Investigations, Forensics & Evidence）
+parent: 第 19 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 调查、取证与证据（Investigations, Forensics & Evidence）
 
 > 来源：Chapter 19 · Investigations（部分）

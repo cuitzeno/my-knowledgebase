@@ -1,3 +1,10 @@
+---
+title: 05 · 网络攻击与防御（Eavesdropping / Modification / DoS）
+parent: 第 12 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 · 网络攻击与防御（Eavesdropping / Modification / DoS）
 
 ## 一句话秒懂

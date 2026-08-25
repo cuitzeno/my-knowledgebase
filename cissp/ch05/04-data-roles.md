@@ -1,3 +1,10 @@
+---
+title: 04 理解数据角色（Understanding Data Roles）
+parent: 第 5 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # 04 理解数据角色（Understanding Data Roles）
 
 > Domain 1 收尾篇 · 谁对数据负责？一张"身份牌"清单

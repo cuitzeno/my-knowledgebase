@@ -1,3 +1,10 @@
+---
+title: 03 对称加密算法与分组模式（Algorithms & Modes of Operation）
+parent: 第 6 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # 03 对称加密算法与分组模式（Algorithms & Modes of Operation）
 
 > Domain 3 · 分组密码的 7 种模式 + 主流算法 DES/3DES/AES

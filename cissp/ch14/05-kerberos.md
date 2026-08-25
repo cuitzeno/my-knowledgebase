@@ -1,3 +1,10 @@
+---
+title: 05 · Kerberos 认证（Ticket-Based SSO）
+parent: 第 14 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 · Kerberos 认证（Ticket-Based SSO）
 
 ## 一句话秒懂

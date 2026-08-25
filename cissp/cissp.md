@@ -1,3 +1,9 @@
+---
+title: CISSP 认证安全工程师知识库
+nav_order: 2
+has_children: True
+---
+
 # CISSP 通俗考点短文库
 
 > 教材：*ISC2 CISSP Official Study Guide, 10th Edition (2024, Sybex)* · 共 1899 页 / 21 章

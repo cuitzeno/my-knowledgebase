@@ -1,3 +1,10 @@
+---
+title: 04 PKI 与数字证书（Public Key Infrastructure）
+parent: 第 7 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # 04 PKI 与数字证书（Public Key Infrastructure）
 
 > Domain 3 · 用"可信第三方+证书"解决"公钥到底是不是他的"难题

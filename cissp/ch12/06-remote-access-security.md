@@ -1,3 +1,10 @@
+---
+title: 06 · 远程访问安全管理（Remote Access Security）
+parent: 第 12 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # 06 · 远程访问安全管理（Remote Access Security）
 
 ## 一句话秒懂

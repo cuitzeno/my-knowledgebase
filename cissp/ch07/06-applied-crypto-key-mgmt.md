@@ -1,3 +1,10 @@
+---
+title: 06 应用密码学与密钥管理（Applied Crypto & Key Management）
+parent: 第 7 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # 06 应用密码学与密钥管理（Applied Crypto & Key Management）
 
 > Domain 3 · 把密码学落到邮件/Web/磁盘 + 密钥怎么管才安全

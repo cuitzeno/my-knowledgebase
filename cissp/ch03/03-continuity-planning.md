@@ -1,3 +1,10 @@
+---
+title: Ch3-03 连续性规划（Continuity Planning）
+parent: 第 3 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # Ch3-03 连续性规划（Continuity Planning）
 
 > 一句话秒懂：BIA 算完"哪里最脆弱"后，连续性规划就是"具体怎么保"——定策略、上措施，让人/楼/系统三大类资产扛住灾难。

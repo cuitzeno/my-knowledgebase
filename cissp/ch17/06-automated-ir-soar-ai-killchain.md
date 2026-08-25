@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 17 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # ① 一句话秒懂
 
 自动化事件响应（Automating IR）用 SOAR 把"重复的救火动作"编成剧本自动执行，再借 AI/ML 提升检测智能，用威胁情报（Kill Chain、MITRE ATT&CK）理解攻击全链条——让响应更快、更准、更少靠人。

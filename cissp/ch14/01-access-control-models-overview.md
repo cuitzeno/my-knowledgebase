@@ -1,3 +1,10 @@
+---
+title: 01 · 访问控制模型总览（DAC / MAC / RBAC / ABAC / 规则 / 风险）
+parent: 第 14 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 · 访问控制模型总览（DAC / MAC / RBAC / ABAC / 规则 / 风险）
 
 ## 一句话秒懂

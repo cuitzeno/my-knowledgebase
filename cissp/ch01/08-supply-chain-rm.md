@@ -1,3 +1,10 @@
+---
+title: Supply Chain Risk Management（供应链风险管理）
+parent: 第 1 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 8
+---
+
 # Supply Chain Risk Management（供应链风险管理）
 
 > 来源：Sybex CISSP 第10版 · Chapter 1 · Supply Chain Risk Management

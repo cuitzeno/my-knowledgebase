@@ -1,3 +1,10 @@
+---
+title: 06 · 联合身份与 SAML / OAuth / OIDC
+parent: 第 13 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # 06 · 联合身份与 SAML / OAuth / OIDC
 
 ## 一句话秒懂

@@ -1,3 +1,10 @@
+---
+title: 01 · AAA 模型与标识/认证（IAM 基石）
+parent: 第 13 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 · AAA 模型与标识/认证（IAM 基石）
 
 ## 一句话秒懂

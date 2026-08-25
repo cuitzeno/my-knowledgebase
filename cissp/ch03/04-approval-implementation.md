@@ -1,3 +1,10 @@
+---
+title: Ch3-04 计划批准与实施（Plan Approval & Implementation）
+parent: 第 3 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # Ch3-04 计划批准与实施（Plan Approval & Implementation）
 
 > 一句话秒懂：连续性方案写完了，得让 CEO 签字撑腰、全员培训演习、落到纸面文档——否则只是一份没人认的 PPT。

@@ -1,3 +1,10 @@
+---
+title: Ch9-02 计算机硬件架构：CPU、执行类型、保护环与进程状态
+parent: 第 9 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # Ch9-02 计算机硬件架构：CPU、执行类型、保护环与进程状态
 
 > 所属域：Domain 3 Security Architecture and Engineering

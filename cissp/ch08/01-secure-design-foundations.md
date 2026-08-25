@@ -1,3 +1,10 @@
+---
+title: Ch8-01 安全设计基础：主体/客体、传递信任、开放与封闭系统
+parent: 第 8 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # Ch8-01 安全设计基础：主体/客体、传递信任、开放与封闭系统
 
 > 所属域：Domain 3 Security Architecture and Engineering（安全架构与工程）

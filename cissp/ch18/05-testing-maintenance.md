@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 18 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # ① 一句话秒懂
 
 测试与维护（Testing & Maintenance）确保 DRP "活"着且有效：用六种测试（阅读/桌面/走查/模拟/并行/全中断）由浅入深验证，每次事件后做**复盘（Lessons Learned）**，并把 DRP 当"活文档"随组织变化持续更新。

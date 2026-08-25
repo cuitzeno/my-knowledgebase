@@ -1,3 +1,10 @@
+---
+title: 04 密码学生命周期与密钥治理（Cryptographic Life Cycle & Key Management）
+parent: 第 6 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # 04 密码学生命周期与密钥治理（Cryptographic Life Cycle & Key Management）
 
 > Domain 3 · 算法会"过期"，密钥要"托管"——治理视角

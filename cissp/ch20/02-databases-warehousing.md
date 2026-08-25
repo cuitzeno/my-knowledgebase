@@ -1,3 +1,10 @@
+---
+title: 数据库与数据仓库安全（Databases, Data Warehousing & Security）
+parent: 第 20 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 数据库与数据仓库安全（Databases, Data Warehousing & Security）
 
 > 来源：Chapter 20 · Establishing Databases and Data Warehousing

@@ -1,3 +1,10 @@
+---
+title: 02 · 认证因素与密码策略（Authentication Factors）
+parent: 第 13 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 02 · 认证因素与密码策略（Authentication Factors）
 
 ## 一句话秒懂

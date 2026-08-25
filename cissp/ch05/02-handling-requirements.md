@@ -1,3 +1,10 @@
+---
+title: 02 建立信息与资产处理要求（Establishing Handling Requirements）
+parent: 第 5 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 02 建立信息与资产处理要求（Establishing Handling Requirements）
 
 > Domain 1 收尾篇 · 数据全生命周期的管理与销毁

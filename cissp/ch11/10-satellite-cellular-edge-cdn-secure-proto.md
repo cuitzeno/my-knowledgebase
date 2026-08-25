@@ -1,3 +1,10 @@
+---
+title: 10 · 卫星/蜂窝/边缘网络、CDN 与安全通信协议（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 10
+---
+
 # 10 · 卫星/蜂窝/边缘网络、CDN 与安全通信协议（Ch11 · Domain 4）
 
 > 通信不止以太网和 Wi-Fi。卫星、蜂窝（4G/5G）、边缘网络、CDN 各有安全要点；而 IPSec/Kerberos/SSH/Signal 等「安全通信协议」才是给通道上锁的终极手段。

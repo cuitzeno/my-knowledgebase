@@ -1,3 +1,10 @@
+---
+title: 安全编码实践（Secure Coding Practices）
+parent: 第 21 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 7
+---
+
 # 安全编码实践（Secure Coding Practices）
 
 > 来源：Chapter 21 · Secure Coding Practices

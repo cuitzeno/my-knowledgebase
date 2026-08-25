@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 17 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # ① 一句话秒懂
 
 本章集中讲三类高频攻击手法：**拒绝服务（DoS/DDoS）** 把系统冲瘫、**僵尸网络（Botnet）** 提供攻击兵力、**中间人/On-path 攻击** 偷偷截获篡改通信——以及对应的 SYN Flood、Smurf、MITM 等经典招式。

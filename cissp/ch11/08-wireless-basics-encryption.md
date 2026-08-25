@@ -1,3 +1,10 @@
+---
+title: 08 · 无线网络基础与加密（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 8
+---
+
 # 08 · 无线网络基础与加密（Ch11 · Domain 4）
 
 > 无线让部署变简单、成本低，但信号「溢出墙外」带来距离窃听、新 DoS 与入侵风险。Wi-Fi 加密从 WEP 一路烂到 WPA3，这一篇讲清演进与安全部署步骤。

@@ -1,3 +1,10 @@
+---
+title: 05 密码学攻击（Cryptographic Attacks）
+parent: 第 7 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 密码学攻击（Cryptographic Attacks）
 
 > Domain 3 · 攻击者怎么破密码，以及"加盐+密钥延展"怎么防

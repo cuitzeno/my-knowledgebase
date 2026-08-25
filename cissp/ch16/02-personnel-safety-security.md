@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 16 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # ① 一句话秒懂
 
 人员安全（Personnel Safety and Security）是运营里优先级最高的事——数据、服务器、大楼都能换，人换不了。所以物理安防设计要"人命优先于资产"，再配套胁迫报警、差旅安全和应急管理。

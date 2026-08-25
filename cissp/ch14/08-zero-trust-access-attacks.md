@@ -1,3 +1,10 @@
+---
+title: 08 · 零信任与访问控制攻击（Zero-Trust & Attacks）
+parent: 第 14 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 8
+---
+
 # 08 · 零信任与访问控制攻击（Zero-Trust & Attacks）
 
 ## 一句话秒懂

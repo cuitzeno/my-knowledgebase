@@ -1,3 +1,10 @@
+---
+title: 09 · 无线攻击与防御（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 9
+---
+
 # 09 · 无线攻击与防御（Ch11 · Domain 4）
 
 > 无线网天生比有线更脆弱：信号外溢、认证由基站说了算。这一篇盘点主流无线攻击（rogue AP、evil twin、解除关联、干扰、IV 滥用）与对应防御。

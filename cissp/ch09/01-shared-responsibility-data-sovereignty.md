@@ -1,3 +1,10 @@
+---
+title: Ch9-01 共同责任、数据本地化与数据主权
+parent: 第 9 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # Ch9-01 共同责任、数据本地化与数据主权
 
 > 所属域：Domain 3 Security Architecture and Engineering

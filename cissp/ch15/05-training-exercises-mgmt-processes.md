@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 15 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # ① 一句话秒懂
 
 训练演练（Training & Exercises）和安全管理流程（Security Management Processes）是评估测试体系的"软实力闭环"——一边用红蓝对抗练队伍，一边用日志审查、账户管理、指标看板盯日常，形成持续改进。

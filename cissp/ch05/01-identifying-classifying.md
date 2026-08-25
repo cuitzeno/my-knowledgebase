@@ -1,3 +1,10 @@
+---
+title: 01 识别与分类信息资产（Identifying & Classifying Information and Assets）
+parent: 第 5 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 识别与分类信息资产（Identifying & Classifying Information and Assets）
 
 > Domain 1 收尾篇 · 资产安全（Asset Security）的起点

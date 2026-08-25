@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 15 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # ① 一句话秒懂
 
 安全评估与测试程序（Security Assessment and Testing Program）就是给公司的"安全防御体系"定期做体检——用测试、评估、审计三件套，确认那些安全控制措施真的"在好好干活"。

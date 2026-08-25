@@ -1,3 +1,10 @@
+---
+title: 01 · OSI 与 TCP/IP 模型（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 · OSI 与 TCP/IP 模型（Ch11 · Domain 4）
 
 > **Domain 4 通信与网络安全**的第一块基石，就是理解网络到底分了几层、每层干什么。考试几乎必考 OSI 七层与 TCP/IP 四层（或五层）的对应关系，以及每层典型的协议和安全关注点。

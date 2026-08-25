@@ -1,3 +1,10 @@
+---
+title: 03 数字签名与 HMAC（Digital Signatures & HMAC）
+parent: 第 7 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # 03 数字签名与 HMAC（Digital Signatures & HMAC）
 
 > Domain 3 · 用"私钥签名"实现不可否认 + 完整 + 认证

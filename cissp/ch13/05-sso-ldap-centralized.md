@@ -1,3 +1,10 @@
+---
+title: 05 · 单点登录与目录服务（SSO / LDAP）
+parent: 第 13 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 · 单点登录与目录服务（SSO / LDAP）
 
 ## 一句话秒懂

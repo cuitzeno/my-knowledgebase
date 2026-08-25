@@ -1,3 +1,10 @@
+---
+title: 05 使用安全基线（Using Security Baselines）
+parent: 第 5 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 5
+---
+
 # 05 使用安全基线（Using Security Baselines）
 
 > Domain 1 收尾篇 · 给系统一个"安全起跑线"

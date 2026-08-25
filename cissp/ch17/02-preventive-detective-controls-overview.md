@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 17 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # ① 一句话秒懂
 
 预防性与检测性控制（Preventive vs Detective Controls）是安全运营的两大类"武器"：预防控制**试图阻止**坏事发生（锁、防火墙、加密），检测控制**事后发现**坏事已发生（摄像头、审计 trail、IDS）。两者配合构成纵深防御。

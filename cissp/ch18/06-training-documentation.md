@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 18 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # ① 一句话秒懂
 
 培训、意识与文档（Training, Awareness & Documentation）是 DRP 落地的最后一公里：按角色分层培训全员、把计划当**极敏感文档**按 need-to-know 分发（用活页夹/内网但备纸质副本），确保灾难时人人知道自己干啥、计划拿得到。

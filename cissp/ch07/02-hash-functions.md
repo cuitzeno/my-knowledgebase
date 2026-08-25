@@ -1,3 +1,10 @@
+---
+title: 02 哈希函数（Hash Functions）
+parent: 第 7 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 02 哈希函数（Hash Functions）
 
 > Domain 3 · 把任意长消息压成定长"指纹"，只保完整不保密

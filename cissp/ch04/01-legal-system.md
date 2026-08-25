@@ -1,3 +1,10 @@
+---
+title: Ch4-01 法律体系分类与计算机犯罪法（Legal System & Computer Crime）
+parent: 第 4 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # Ch4-01 法律体系分类与计算机犯罪法（Legal System & Computer Crime）
 
 > 域：Domain 1 – 安全与风险管理｜章：Chapter 4 – 法律、法规、合规（Legal, Regulations, Compliance）

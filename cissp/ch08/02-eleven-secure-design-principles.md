@@ -1,3 +1,10 @@
+---
+title: Ch8-02 十一条安全设计原则（CISSP 目标 3.1）
+parent: 第 8 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # Ch8-02 十一条安全设计原则（CISSP 目标 3.1）
 
 > 所属域：Domain 3 Security Architecture and Engineering

@@ -1,3 +1,10 @@
+---
+title: 02 对称 vs 非对称加密（Symmetric vs Asymmetric）
+parent: 第 6 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 02 对称 vs 非对称加密（Symmetric vs Asymmetric）
 
 > Domain 3 · 两种加密体制的优缺点对照 + 混合密码学

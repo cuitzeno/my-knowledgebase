@@ -1,3 +1,10 @@
+---
+title: 01 · 安全设施建设规划、选址与 CPTED
+parent: 第 10 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 · 安全设施建设规划、选址与 CPTED
 
 > **Domain 3（安全架构与工程）· Ch10 物理安全 · 第 1 篇**

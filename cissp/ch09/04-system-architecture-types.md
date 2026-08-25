@@ -1,3 +1,10 @@
+---
+title: Ch9-04 系统架构类型：客户端/服务器、分布式、高性能、实时系统
+parent: 第 9 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # Ch9-04 系统架构类型：客户端/服务器、分布式、高性能、实时系统
 
 > 所属域：Domain 3 Security Architecture and Engineering

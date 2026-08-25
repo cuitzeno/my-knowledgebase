@@ -1,3 +1,10 @@
+---
+title: 03 数据保护方法（Data Protection Methods）
+parent: 第 5 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # 03 数据保护方法（Data Protection Methods）
 
 > Domain 1 收尾篇 · 在加密之外，还有这些"去标识化"与"边界代理"手段

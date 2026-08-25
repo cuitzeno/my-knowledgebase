@@ -1,3 +1,10 @@
+---
+title: Ch3-01 业务连续性规划与项目范围（BCP & Project Scope）
+parent: 第 3 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # Ch3-01 业务连续性规划与项目范围（BCP & Project Scope）
 
 > 一句话秒懂：BCP（业务连续性规划）就是"灾难来了，生意怎么不停摆"的预案——它管的是业务流程，不是具体的服务器。

@@ -1,3 +1,10 @@
+---
+title: 06 · 网络分段与微隔离（Ch11 · Domain 4）
+parent: 第 11 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # 06 · 网络分段与微隔离（Ch11 · Domain 4）
 
 > 网络不该是一个大杂院。分段（segmentation）把大网切成小单元，提升性能、遏制广播风暴、隔离敏感流量。微隔离（micro-segmentation）则是零信任的关键落地手段。

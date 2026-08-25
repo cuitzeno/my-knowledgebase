@@ -1,3 +1,10 @@
+---
+title: 07 · 语音通信安全（VoIP / Vishing / Phreaking）
+parent: 第 12 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 7
+---
+
 # 07 · 语音通信安全（VoIP / Vishing / Phreaking）
 
 ## 一句话秒懂

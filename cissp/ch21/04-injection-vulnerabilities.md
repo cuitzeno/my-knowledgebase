@@ -1,3 +1,10 @@
+---
+title: 注入漏洞全解（Injection: SQL/LDAP/Command/Code）
+parent: 第 21 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # 注入漏洞全解（Injection: SQL/LDAP/Command/Code）
 
 > 来源：Chapter 21 · Injection Vulnerabilities

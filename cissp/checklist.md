@@ -1,3 +1,9 @@
+---
+title: CISSP 打卡任务清单（Checklist）
+parent: CISSP 认证安全工程师知识库
+nav_order: 90
+---
+
 # CISSP 打卡任务清单（Checklist）
 
 > 用法：每周投入 **6–8 小时**，按域/章推进；每完成一篇短文，在 `[ ]` 里打 `x`（改为 `[x]`）。

@@ -1,0 +1,11 @@
+title: 我的知识库
+description: 资料读透后生成的多主题知识库（GitHub Pages 原生构建）
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+search_enabled: true
+exclude:
+  - .agents
+  - source-files
+aux_links:
+  在 GitHub 上编辑: https://github.com/cuitzeno/my-knowledgebase

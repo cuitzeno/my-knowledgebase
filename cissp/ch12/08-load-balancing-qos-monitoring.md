@@ -1,3 +1,10 @@
+---
+title: 08 · 负载均衡、QoS 与网络监控
+parent: 第 12 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 8
+---
+
 # 08 · 负载均衡、QoS 与网络监控
 
 ## 一句话秒懂

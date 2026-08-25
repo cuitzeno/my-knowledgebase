@@ -1,3 +1,10 @@
+---
+title: Security Policy, Standards, Procedures, and Guidelines（安全政策、标准、步骤与指南）
+parent: 第 1 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # Security Policy, Standards, Procedures, and Guidelines（安全政策、标准、步骤与指南）
 
 > 来源：Sybex CISSP 第10版 · Chapter 1 · Security Policy, Standards, Procedures, and Guidelines

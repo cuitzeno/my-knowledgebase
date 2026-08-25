@@ -1,3 +1,10 @@
+---
+title: Ch2-06 社会工程（Social Engineering）
+parent: 第 2 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # Ch2-06 社会工程（Social Engineering）
 
 > 一句话秒懂：社会工程不是"黑电脑"，而是"骗人"——攻击者利用人的善意、压力和疏忽，绕过所有技术防线。

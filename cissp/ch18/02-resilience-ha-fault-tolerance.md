@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 18 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # ① 一句话秒懂
 
 系统弹性、高可用与容错（Resilience / HA / Fault Tolerance）的核心就一句话：**消除单点故障（SPOF）**，让关键系统在 adverse 事件下仍能维持服务——靠 RAID、failover 集群、UPS/发电机，并用"几个九"量化可用性。

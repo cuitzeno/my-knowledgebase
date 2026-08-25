@@ -1,3 +1,10 @@
+---
+title: Security Boundaries（安全边界）
+parent: 第 1 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # Security Boundaries（安全边界）
 
 > 来源：Sybex CISSP 第10版 · Chapter 1 · Security Boundaries

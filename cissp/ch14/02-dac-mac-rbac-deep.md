@@ -1,3 +1,10 @@
+---
+title: 02 · DAC / MAC / RBAC 深入（三种主力模型）
+parent: 第 14 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 2
+---
+
 # 02 · DAC / MAC / RBAC 深入（三种主力模型）
 
 ## 一句话秒懂

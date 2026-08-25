@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 16 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # ① 一句话秒懂
 
 云托管服务（Managed Services in the Cloud）讲清一件事：上了云，安全责任不是全甩给厂商——**共享责任模型（Shared Responsibility）** 决定了哪些你管、哪些厂商管，再顺带理清 SaaS/PaaS/IaaS、部署模型、弹性伸缩和 serverless 这些云术语。

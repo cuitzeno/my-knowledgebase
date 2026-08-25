@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 16 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # ① 一句话秒懂
 
 安全运营基础概念（Foundational Security Operations Concepts）是一套"管人管权"的底层原则：该尽的义务要尽（due care/diligence），权限给最少（least privilege），秘密按需要知（need-to-know），关键操作分人做（SoD），再用轮岗、强制休假、双人控制把内鬼风险压到最低。

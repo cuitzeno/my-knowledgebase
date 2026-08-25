@@ -1,3 +1,10 @@
+---
+title: Ch4-04 隐私法（Privacy Laws）
+parent: 第 4 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # Ch4-04 隐私法（Privacy Laws）
 
 > 域：Domain 1｜章：Chapter 4 – 法律、法规、合规

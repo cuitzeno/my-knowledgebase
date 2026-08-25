@@ -1,3 +1,10 @@
+---
+title: Ch9-06 微服务、基础设施即代码与不可变架构
+parent: 第 9 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # Ch9-06 微服务、基础设施即代码与不可变架构
 
 > 所属域：Domain 3 Security Architecture and Engineering

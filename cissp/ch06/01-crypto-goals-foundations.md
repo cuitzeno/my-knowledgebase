@@ -1,3 +1,10 @@
+---
+title: 01 密码学目标与基础概念（Cryptographic Foundations）
+parent: 第 6 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 1
+---
+
 # 01 密码学目标与基础概念（Cryptographic Foundations）
 
 > Domain 3 · 密码学开篇 · 四个目标 + 一套术语 + 两个设计原则

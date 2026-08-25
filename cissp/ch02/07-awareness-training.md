@@ -1,3 +1,10 @@
+---
+title: Ch2-07 安全意识、培训与教育（Security Awareness, Training, Education）
+parent: 第 2 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 7
+---
+
 # Ch2-07 安全意识、培训与教育（Security Awareness, Training, Education）
 
 > 一句话秒懂：技术防线和制度都立好了，但人不懂、不记、不执行，照样破防——所以要用"意识→培训→教育"三层把人武装起来。

@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 18 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 4
+---
+
 # ① 一句话秒懂
 
 恢复计划开发（Recovery Plan Development）把 DRP 落笔成文档，并按 archive bit 设计**全量/增量/差异备份**策略——这是"最被忽视却最关键"的预防措施；还要明确灾难宣布、人员通信、评估与软件托管（escrow）。

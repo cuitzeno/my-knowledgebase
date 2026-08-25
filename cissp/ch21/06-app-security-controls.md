@@ -1,3 +1,10 @@
+---
+title: 应用安全控制：输入校验、WAF、参数化查询（Application Security Controls）
+parent: 第 21 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 6
+---
+
 # 应用安全控制：输入校验、WAF、参数化查询（Application Security Controls）
 
 > 来源：Chapter 21 · Application Security Controls

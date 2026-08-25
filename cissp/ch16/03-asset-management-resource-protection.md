@@ -1,3 +1,10 @@
+---
+title: ① 一句话秒懂
+parent: 第 16 章
+grand_parent: CISSP 认证安全工程师知识库
+nav_order: 3
+---
+
 # ① 一句话秒懂
 
 安全配置与资产管理（Asset Management & Resource Protection）就是给"软硬件和信息"建立台账、贴标签、做好生命周期管护——从采购建档、日常跟踪，到报废前彻底擦除数据（sanitization），全程不丢不乱不泄密。
