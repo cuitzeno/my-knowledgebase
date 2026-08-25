@@ -14,3 +14,4 @@ nav_order: 1
 - [Postman 接口测试实战知识库](postman/postman.md)
 - [Burp Suite 实战知识库](burp/burp.md)
 - [OWASP WSTG Web 安全测试指南知识库](wstg/wstg.md)
+- [Web 安全与开发基础实战知识库](websec/websec.md)
