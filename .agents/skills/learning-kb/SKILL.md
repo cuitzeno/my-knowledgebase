@@ -104,7 +104,7 @@ git commit -m "feat(<theme>): add NN-<slug> …"
 
 ## 脚手架片段
 
-`index.html`（docsify 引导页，CDN 加载，零构建）：
+`index.html`（docsify 引导页，CDN 加载，零构建；侧边栏可折叠）：
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -113,17 +113,20 @@ git commit -m "feat(<theme>): add NN-<slug> …"
   <title>我的知识库</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: '我的知识库', repo: 'cuitzeno/my-knowledgebase',
-      loadSidebar: true, subMaxLevel: 2, search: 'auto', homepage: 'README.md'
+      loadSidebar: true, subMaxLevel: 0, search: 'auto', homepage: 'README.md',
+      sidebarDisplayLevel: 1
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
 ```
