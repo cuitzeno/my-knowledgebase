@@ -131,10 +131,11 @@ git commit -m "feat(<theme>): add NN-<slug> …"
 </html>
 ```
 
-`_sidebar.md`（根导航，按主题分组）：
+`_sidebar.md`（根导航，按主题分组；**主题行用纯表头（不带链接）以便只折叠/展开，总览作为首子项**）：
 ```markdown
 - [我的知识库](/)
-- [CISSP 认证安全工程师知识库](cissp/cissp.md)
+- CISSP 认证安全工程师知识库
+  - [总览](cissp/cissp.md)
   - [CIA 三要素](cissp/01-CIA三要素.md)
   - [安全治理与合规驱动](cissp/02-安全治理与合规驱动.md)
 ```
