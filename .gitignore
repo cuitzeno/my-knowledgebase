@@ -1,0 +1,14 @@
+# Jekyll 构建产物（GitHub Pages 远程主题自动构建，无需本地产物）
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# 本地提取用的虚拟环境
+.agents/venv/
+
+# 原始素材不入库（文章为原创讲解）
+source-files/
+
+# 依赖与密钥
+**/node_modules/
+**/.env
