@@ -21,6 +21,8 @@ metadata:
 - `theme`  —— 必填。主题 slug，用作文件夹名与 front matter 的 `parent`，如 `cissp`。
 - `--title "<中文名>"` —— 可选。主题显示名，如 "CISSP 认证安全工程师知识库"；缺省用 `theme`。
 - `--with-images` —— 可选开关。开启后用 baoyu-cover-image / baoyu-diagram 配图（默认纯文字）。
+- `--extract-images` —— 可选。提取 PDF 内嵌图片（去重后）落到 `<theme>/imgs/` 并嵌入相关段落；
+  仅对允许转载的开放素材（如 OWASP）使用，版权素材（如 CISSP）默认不加原图。
 
 ## 环境依赖
 
@@ -44,6 +46,14 @@ metadata:
 - **PDF**：`.agents/venv/bin/python <skill>/scripts/extract_pdf.py <source> --out /tmp/<theme>.txt`
   输出纯文本 + 打印页数。若失败，回退：用 Read 工具分页读取（每次 ≤50 页）拼接。
 - **URL**：`WebFetch` 取正文；多页则用 `websearch` 补充，汇成一份文本。
+
+### 2b. 提取图片（仅当传 `--extract-images`）
+`.agents/venv/bin/python <skill>/scripts/extract_images.py <source> --out <theme>`
+- 按像素内容去重，落到 `<theme>/imgs/`，并生成 `imgs/manifest.json`（记录每张图出现在哪些页）。
+- **判废规则**：若去重后每张唯一图都出现在"每一页"（典型 = 页眉/页脚/Logo 等页面装饰），
+  说明无独有内容图 → **不嵌入、删除 `imgs/`**，并在大纲确认时告知用户"该 PDF 无可用配图"。
+- 写正文时，把与某概念相关的唯一图用 `![alt](imgs/xxx.png)` 嵌到对应段落，文末来源补注"含原文档配图"。
+- 版权红线：CISSP 等版权素材即便有图也不提取；仅 OWASP 等开放许可素材启用。
 
 ### 3. 分析 → 出大纲（质量闸门前）
 读提取文本，按**知识主题/知识点**拆分（非死板按章节），产出大纲：
