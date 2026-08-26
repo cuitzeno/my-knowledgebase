@@ -1,5 +1,5 @@
 ---
-title: Web 安全与开发基础实战知识库
+title: "Web 安全与开发基础实战知识库"
 nav_order: 7
 has_children: true
 ---
@@ -18,7 +18,7 @@ has_children: true
 
 其中 Postman / Burp / ZAP 另有完整专属知识库，本库第 6 组是"针对本清单场景的精简 Lab"，与之互补不重复。
 
-**分组与文章：**
+## 分组与文章
 
 - [① 协议与架构](01-协议与架构/01-协议与架构.md)
   - 概念：[HTTP 客户端/服务器架构](01-协议与架构/01-http架构.md) · [HTTP 方法与语义](01-协议与架构/02-http方法.md)
