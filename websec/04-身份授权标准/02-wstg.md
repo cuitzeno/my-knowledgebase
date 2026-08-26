@@ -5,13 +5,41 @@ grand_parent: "Web 安全与开发基础实战知识库"
 nav_order: 2
 ---
 
-# 概念｜OWASP WSTG 测试方法论（v5.0）
+# OWASP WSTG 测试方法论（v5.0）
 
-Top 10 告诉你"测什么风险"，WSTG 告诉你"怎么系统地测"。本库已有完整 [WSTG 知识库](../../wstg/wstg.md)，这里做总览衔接。**当前最新版为 v5.0（2026 开发线）。**
+## 一句话定义
+Top 10 告诉你"测什么风险"，WSTG 告诉你"怎么系统地测"。WSTG 是 Web/API 安全测试标准清单，按 12 个测试大类组织，每类下列具体测试项，并用 `WSTG-<类别>-<编号>` 标识——与 Burp/ZAP 等工具互补：WSTG 定清单，工具做执行。本库已有完整 [WSTG 知识库](../../wstg/wstg.md)，这里做总览衔接。**当前最新版为 v5.0（2026 开发线）。**
 
-## ① 是什么
+## 核心架构 / 工作原理
 
-**WSTG（Web Security Testing Guide）** 是 OWASP 的 Web/API 安全测试标准清单，按 **12 个测试大类**组织，每类下列具体测试项，并用 `WSTG-<类别>-<编号>` 标识。
+```mermaid
+graph TD
+  A[WSTG 5.0 / 4.2 12 大类] --> B[4.1 信息收集 INFO]
+  A --> C[4.2 配置与部署管理 CONF]
+  A --> D[4.3 身份管理 IDNT]
+  A --> E[4.4 认证测试 ATHN]
+  A --> F[4.5 授权测试 ATHZ]
+  A --> G[4.6 会话管理测试 SESS]
+  A --> H[4.7 输入验证测试 INPV]
+  A --> I[4.8 错误处理测试 ERRH]
+  A --> J[4.9 弱密码学测试 CRYP]
+  A --> K[4.10 业务逻辑测试 BUSL]
+  A --> L[4.11 客户端测试 CLNT]
+  A --> M[4.12 API 测试 APIT]
+  
+  B --> B1[侦察/指纹/目录枚举/技术栈识别]
+  C --> C1[默认配置/管理接口/目录列出/版本泄露]
+  D --> D1[用户枚举/账号状态/密码策略/账号恢复]
+  E --> E1[弱认证/多因子/会话/密码重置/OAuth/OIDC]
+  F --> F1[垂直/水平越权/IDOR/强制浏览/目录遍历]
+  G --> G1[会话固定/劫持/超时/并发/CSRF/令牌强度]
+  H --> H1[SQL/命令/XXE/NoSQL/LDAP/XSS/路径遍历/模板注入]
+  I --> I1[错误页泄露/堆栈/调试信息/日志敏感数据]
+  J --> J1[弱算法/密钥管理/证书/随机数/哈希/编码]
+  K --> K1[业务流程/并发/限额/优惠券/支付/文件上传]
+  L --> L1[DOM XSS/点击劫持/CORS/CSP/存储/PostMessage]
+  M --> M1[GraphQL/REST/认证/授权/限流/Schema/批量/Introspection]
+```
 
 ### WSTG v5.0 的 12 个测试大类（对比 v4.2 主要扩展）
 
@@ -30,52 +58,66 @@ Top 10 告诉你"测什么风险"，WSTG 告诉你"怎么系统地测"。本库�
 | **4.11 客户端测试** (CLNT) | **15 项**（v4.2 约 10 项），新增 DOM XSS 子类、CSS 注入、WebSocket、Web Messaging、反向标签劫持、客户端模板注入 |
 | **4.12 API 测试** (APIT) | **5 项**（v4.2 仅 GraphQL），对齐 OWASP API Top 10：侦察、BOLA、过度数据暴露、BFLA、GraphQL |
 
-## ② 为什么重要
+| 场景 ID 体系 | 示例 | 引用建议 |
+|--------------|------|----------|
+| `WSTG-INFO-02` | 指纹识别 Web 服务器 | 带版本：`WSTG-v42-INFO-02` 或 `WSTG-v50-INFO-02` |
+| `WSTG-ATHZ-04` | 测试不安全直接对象引用 (IDOR) | 同上 |
+| `WSTG-APIT-03` | 测试 API 过度数据暴露 | 同上 |
 
-- 把"该测什么"固化成可复用目录，避免凭感觉漏项。
-- 与 Top 10 互补：Top 10 排优先级，WSTG 做验证。
-- 与 Burp/ZAP 等工具互补：WSTG 定清单，工具做执行。
+> **场景 ID 体系**：每个测试场景唯一 ID `WSTG-<类别>-<编号>`，建议带版本 `WSTG-v50-<类别>-<编号>`（如 `WSTG-v50-INFO-02`），版本格式去除小数点（v5.0 → `v50`）。
 
-## ③ 核心概念拆解
+## 快速上手步骤
 
-### 场景 ID 体系
+1. **按项目裁剪清单**：
+   - 纯 API 项目 → 重点 4.4/4.5/4.6/4.7/4.12
+   - 传统 Web → 全 12 类，重点 4.1/4.3/4.4/4.5/4.7/4.11
+   - 移动端 API → 加 4.12 + 移动专项
+2. **工具落地映射**：
+   - 4.1/4.2/4.3 → ZAP Spider/Active Scan + 手工侦察
+   - 4.4/4.5/4.6/4.7 → Burp Repeater/Intruder/Sequencer/Session Handling
+   - 4.7/4.11 → Burp DOM Invader + 手工前端审计
+   - 4.12 → Postman/Newman + GraphQL Raider + 自动化契约测试
+3. **报告映射**：每个发现映射 `WSTG-<类别>-<编号>` → 严重度 → 修复建议 → 复测
 
-- 每个测试场景都有唯一 ID: `WSTG-<类别>-<编号>`
-- **引用建议带版本**: `WSTG-v50-<类别>-<编号>` (例如 `WSTG-v50-INFO-02`)
-- 版本格式：`WSTG-<version>-<category>-<number>`，其中 `<version>` 去除版本号后缀 (如 v5.0 → `v50`)
+```bash
+# 快速生成 WSTG 清单模板
+# 参见 WSTG 知识库完整版 ../../wstg/wstg.md
+```
 
-### 测试框架
+### 测试框架与技术谱系
 
-- 包含 **5 个开发阶段**:
+- **5 个开发阶段**：
   - Phase 1: 开发前 (Before Development Begins) —— 定义 SDLC、评审策略、度量指标
   - Phase 2: 定义和设计 (During Definition and Design) —— 评审安全需求、设计/架构、UML、威胁建模
   - Phase 3: 开发 (During Development) —— 代码走查、静态代码审查（业务需求、Top 10、语言/框架清单、法规）
   - Phase 4: 部署 (During Deployment) —— 应用渗透测试、配置管理测试
   - Phase 5: 维护 (During Maintenance and Operations) —— 运营评审、健康检查、变更验证
+- **测试技术**：手动审查/威胁建模/源码审计/渗透测试平衡组合；自动化（SAST/DAST/SCA）做广度，人工覆盖业务逻辑、授权绕过等上下文风险
+- **与 OWASP 其他标准关系**：**Top 10**→风险优先级；**WSTG**→测试方法学；**ASVS**→验证要求；**SAMM**→成熟度模型
 
-### 测试技术谱系
+## 踩坑避坑指南
 
-- 手动审查/评审、威胁建模、源码审计、渗透测试——强调**平衡组合**
-- 自动化（SAST/DAST/SCA）用于广度覆盖，人工测试覆盖业务逻辑、授权绕过、上下文相关风险
+| 场景 | 问题现象 | 原因 | 解决/最佳实践 |
+|------|----------|------|---------------|
+| WSTG 当书照念 | 未按目标裁剪，面面俱到耗时 | 不懂"活清单" | **按资产/风险裁剪**：高危资产全测、低危抽测；Top 10 优先 |
+| 只跑扫描对照 ID | 逻辑/业务/配置项仍需人工 | 扫描器覆盖盲区 | **扫描器做面(4.1/4.2/4.7/4.12 部分) + 人工做深(4.4/4.5/4.6/4.10/4.11)** |
+| 与 Top 10 二选一 | 缺优先级或缺验证方法 | 不懂互补 | **Top 10 排优先级 + WSTG 做验证**；形成"定范围→逐项测→出报告" |
+| ID 引用不带版本 | 5.0 与 4.2 编号不一致 | 版本演进 | **引用必带版本**：`WSTG-v42-ATHZ-04` 或 `WSTG-v50-ATHZ-04` |
+| 只测技术漏洞 | 忽略业务逻辑/配置/设计缺陷 | 关注点偏技术 | **4.10 业务逻辑 + 4.2 配置 + 4.4 设计缺陷** 必测 |
 
-### 与 OWASP 其他标准的关系
+## 替代方案对比
 
-- **Top 10** → 风险优先级
-- **WSTG** → 测试方法学
-- **ASVS** (Application Security Verification Standard) → 验证要求
-- **SAMM** (Software Assurance Maturity Model) → 成熟度模型
+| 维度 | WSTG | OWASP ASVS | PTES | 企业内部清单 |
+|------|------|------------|------|--------------|
+| 定位 | 测试执行清单 | 验证要求标准 | 渗透测试执行标准 | 组织定制 |
+| 粒度 | 测试项/步骤 | 验证要求(1-3 级) | 阶段/任务 | 视组织而定 |
+| 场景 ID | `WSTG-XXX-NN` | `Vx.y.z` | 无标准 ID | 自定义 |
+| 工具映射 | 明确(Burp/ZAP/Postman) | 需自行映射 | 需自行映射 | 视清单 |
+| 更新 | 社区持续 | ~2 年版本 | 社区 | 内部节奏 |
+| 适用 | 渗透测试/安全验收 | 需求/开发/验收 | 红队/渗透执行 | 内部合规 |
 
-## ④ 常见误区
+---
 
-- WSTG 是书，照念即可？它是活清单，需按目标裁剪。
-- 只跑扫描对照 ID？业务逻辑/业务规则项仍需人工。
-- 与 Top 10 二选一？应"Top 10 排优先级 + WSTG 做验证"。
-- 版本不标明？ID 可能随版本变更。
-
-## ⑤ 一句话小结
-
-OWASP WSTG v5.0 是 Web 安全测试的"标准清单与 ID 体系"，12 大类 100+ 测试项，与 Top 10 互补：一个排优先级，一个做验证；配合工具落地。
+> 参考来源：[OWASP WSTG v5.0](https://owasp.org/www-project-web-security-testing-guide/v50/) | [GitHub](https://github.com/OWASP/wstg) | https://owasp.org/www-project-web-security-testing-guide/ | 完整知识库 [wstg/wstg.md](../../wstg/wstg.md)
 
 *下一篇：[JWT（含 Scopes）](03-jwt.md)*
-
-> 参考来源：[OWASP WSTG v5.0](https://owasp.org/www-project-web-security-testing-guide/v50/) | [GitHub](https://github.com/OWASP/wstg) | [完整知识库](../../wstg/wstg.md)
