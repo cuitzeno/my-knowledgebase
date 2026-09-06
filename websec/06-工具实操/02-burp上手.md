@@ -14,16 +14,16 @@ nav_order: 2
 
 ```mermaid
 graph LR
-  A[Burp 核心工具链] --> B[Proxy: 拦截/改包/匹配替换/上游代理]
-  A --> C[Target: 站点地图/Scope 管理]
-  A --> D[Repeater: 单包精细手测]
-  A --> E[Intruder: 批量爆破/模糊测试(4种攻击模式)]
-  A --> F[Scanner: 被动/主动扫描(Pro)]
-  A --> G[Sequencer: 令牌随机性分析]
-  A --> H[Decoder/Comparer/Extensions/BApp Store]
+  A[Burp 核心工具链] --> B["Proxy: 拦截/改包/匹配替换/上游代理"]
+  A --> C["Target: 站点地图/Scope 管理"]
+  A --> D["Repeater: 单包精细手测"]
+  A --> E["Intruder: 批量爆破/模糊测试(4种攻击模式)"]
+  A --> F["Scanner: 被动/主动扫描(Pro)"]
+  A --> G["Sequencer: 令牌随机性分析"]
+  A --> H["Decoder/Comparer/Extensions/BApp Store"]
   
-  B --> I[中间人定位: 浏览器代理 -> 127.0.0.1:8080 -> Burp -> 目标]
-  I --> J[HTTPS 解密: Burp CA 证书 -> 导入浏览器根证书存储]
+  B --> I["中间人定位: 浏览器代理 -> 127.0.0.1:8080 -> Burp -> 目标"]
+  I --> J["HTTPS 解密: Burp CA 证书 -> 导入浏览器根证书存储"]
 ```
 
 ## 快速上手步骤

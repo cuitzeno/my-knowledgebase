@@ -14,19 +14,19 @@ nav_order: 6
 
 ```mermaid
 graph TD
-  A[Postman OAuth 2.0 支持] --> B[Authorization Code (+ PKCE)]
-  B --> B1[Auth URL / Token URL / Client ID / Secret]
-  B --> B2[Scope / State / PKCE (S256)]
-  B --> B3[Redirect URI: https://oauth.pstmn.io/v1/callback (云) 或 http://127.0.0.1:5555/callback (本地)]
-  B --> B4[Get New Access Token -> 浏览器授权 -> 回调 -> Token 列表 -> Use Token]
+  A[Postman OAuth 2.0 支持] --> B["Authorization Code (+ PKCE)"]
+  B --> B1["Auth URL / Token URL / Client ID / Secret"]
+  B --> B2["Scope / State / PKCE (S256)"]
+  B --> B3["Redirect URI: https://oauth.pstmn.io/v1/callback (云) 或 http://127.0.0.1:5555/callback (本地)"]
+  B --> B4["Get New Access Token -> 浏览器授权 -> 回调 -> Token 列表 -> Use Token"]
   
   A --> C[Client Credentials]
-  C --> C1[Token URL / Client ID / Secret / Scope]
-  C --> C2[Get New Access Token -> 直接拿 Token]
+  C --> C1["Token URL / Client ID / Secret / Scope"]
+  C --> C2["Get New Access Token -> 直接拿 Token"]
   
   A --> D[Token 使用]
-  D --> D1[请求 Authorization 标签 -> Bearer Token -> {{access_token}}]
-  D --> D2[Tests 脚本自动存环境变量: pm.environment.set('token', pm.response.json().access_token)]
+  D --> D1["请求 Authorization 标签 -> Bearer Token -> {{access_token}}"]
+  D --> D2["Tests 脚本自动存环境变量: pm.environment.set('token', pm.response.json().access_token)"]
   D --> D3[后续请求自动带 Token]
 ```
 

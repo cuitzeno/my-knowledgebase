@@ -14,21 +14,21 @@ nav_order: 14
 ```mermaid
 graph TD
   A[性能保障双引擎] --> B[负载压测 Load Test]
-  B --> B1[Postman 11 原生: 虚拟用户 VU / 阶梯加压曲线 / 持续时间 / 多地域发压]
-  B --> B2[指标: Throughput(QPS) / Latency(p50/p95/p99) / Error Rate / VU 活跃数 / 资源利用率(CPU/MEM/Net)]
-  B --> B3[判定: 找拐点(延时陡增/错误率飙升/吞吐不增) → 标注最大安全 QPS]
-  B --> B4[对比: 基准跑 vs 新版本跑 → 性能回归检测]
+  B --> B1["Postman 11 原生: 虚拟用户 VU / 阶梯加压曲线 / 持续时间 / 多地域发压"]
+  B --> B2["指标: Throughput(QPS) / Latency(p50/p95/p99) / Error Rate / VU 活跃数 / 资源利用率(CPU/MEM/Net)"]
+  B --> B3["判定: 找拐点(延时陡增/错误率飙升/吞吐不增) → 标注最大安全 QPS"]
+  B --> B4["对比: 基准跑 vs 新版本跑 → 性能回归检测"]
   
   A --> C[实时监控 Monitor]
-  C --> C1[定时跑: 频率 1min/5min/15min/1h/1d / 多地域 ]
-  C --> C2[告警: 失败率/延时/响应码/断言失败 → Slack/Email/PagerDuty/Webhook]
-  C --> C2[SLA 仪表盘: 可用性 99.9%+ / p95 < 200ms / 错误预算消耗]
-  C --> C3[趋势: 历史延时/错误率/吞吐走势 → 容量规划/异常早发现]
+  C --> C1["定时跑: 频率 1min/5min/15min/1h/1d / 多地域 "]
+  C --> C2["告警: 失败率/延时/响应码/断言失败 → Slack/Email/PagerDuty/Webhook"]
+  C --> C2["SLA 仪表盘: 可用性 99.9%+ / p95 < 200ms / 错误预算消耗"]
+  C --> C3["趋势: 历史延时/错误率/吞吐走势 → 容量规划/异常早发现"]
   
-  D[轻量替代: Newman 并行近似压测]
+  D["轻量替代: Newman 并行近似压测"]
   D --> D1[newman run -n 1000 --parallel 20 --delay-request 0]
-  D --> D2[适合: 无 Postman 11 / 简单场景 / CI 门禁]
-  D --> D3[局限: 无阶梯曲线/无实时图表/无多地域/统计弱]
+  D --> D2["适合: 无 Postman 11 / 简单场景 / CI 门禁"]
+  D --> D3["局限: 无阶梯曲线/无实时图表/无多地域/统计弱"]
 ```
 
 | 测试类型 | 目标 | 关键配置 | 通过标准示例 |

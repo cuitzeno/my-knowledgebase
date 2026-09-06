@@ -14,21 +14,21 @@ nav_order: 5
 ```mermaid
 graph TD
   A[API 鉴权三大类] --> B[Basic Auth]
-  B --> B1[用户名:密码 -> Base64 -> Authorization: Basic xxx]
+  B --> B1["用户名:密码 -> Base64 -> Authorization: Basic xxx"]
   B --> B2[简单但明文等价，必须 HTTPS]
-  B --> B3[Postman: Auth标签 -> Basic Auth -> 填账号密码 -> 自动生成头]
+  B --> B3["Postman: Auth标签 -> Basic Auth -> 填账号密码 -> 自动生成头"]
   
   A --> C[API Key]
   C --> C1[服务端颁发固定密钥]
-  C --> C2[位置: Header(如 X-API-Key) / Query / Cookie]
-  C --> C3[Postman: Auth标签 -> API Key -> Key/Value/位置 -> 自动注入]
+  C --> C2["位置: Header(如 X-API-Key) / Query / Cookie"]
+  C --> C3["Postman: Auth标签 -> API Key -> Key/Value/位置 -> 自动注入"]
   
-  A --> D[OAuth 2.0 / OIDC]
-  D --> D1[Authorization Code + PKCE: 公共客户端(SPA/移动端)标配]
-  D --> D2[Client Credentials: 服务间/机器对机器]
-  D --> D3[Device Code: 无浏览器设备(TV/CLI)]
-  D --> D4[Resource Owner Password: 遗留/测试慎用]
-  D --> D5[Postman: Auth标签 -> OAuth 2.0 -> 选流程 -> 填端点/Client ID/Secret -> Get New Access Token]
+  A --> D["OAuth 2.0 / OIDC"]
+  D --> D1["Authorization Code + PKCE: 公共客户端(SPA/移动端)标配"]
+  D --> D2["Client Credentials: 服务间/机器对机器"]
+  D --> D3["Device Code: 无浏览器设备(TV/CLI)"]
+  D --> D4["Resource Owner Password: 遗留/测试慎用"]
+  D --> D5["Postman: Auth标签 -> OAuth 2.0 -> 选流程 -> 填端点/Client ID/Secret -> Get New Access Token"]
 ```
 
 | 鉴权方式 | 适用场景 | 安全性 | Postman 配置要点 |

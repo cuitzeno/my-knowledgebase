@@ -18,12 +18,12 @@ graph LR
   C -->|响应| B
   B -->|返回| A
   
-  B --> D[Target: 站点地图/范围]
-  B --> E[Repeater: 手动重放改包]
-  B --> F[Intruder: 自动化爆破/模糊测试]
-  B --> G[Scanner: 主动/被动漏洞扫描]
-  B --> H[Sequencer: 令牌随机性分析]
-  B --> I[Decoder/Comparer/Extensions]
+  B --> D["Target: 站点地图/范围"]
+  B --> E["Repeater: 手动重放改包"]
+  B --> F["Intruder: 自动化爆破/模糊测试"]
+  B --> G["Scanner: 主动/被动漏洞扫描"]
+  B --> H["Sequencer: 令牌随机性分析"]
+  B --> I["Decoder/Comparer/Extensions"]
 ```
 
 | 核心模块 | 定位 | 典型用法 |

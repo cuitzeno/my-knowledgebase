@@ -14,23 +14,23 @@ nav_order: 2
 
 ```mermaid
 graph TD
-  A[MVC 绑定流] --> B[Model (数据/状态)]
-  B --> C[Binding (单向/双向/表达式)]
-  C --> D[View (XML/HTML/JS 模板/控件)]
+  A[MVC 绑定流] --> B["Model (数据/状态)"]
+  B --> C["Binding (单向/双向/表达式)"]
+  C --> D["View (XML/HTML/JS 模板/控件)"]
   D --> E[渲染输出]
   
   A --> F[安全风险点]
-  F --> F1[表达式拼接不可信数据: {path: 'userInput', formatter: '.dangerousFormatter'}]
-  F --> F2[HTML 渲染控件: sap.m.FormattedText / sap.ui.core.HTML / innerHTML]
-  F --> F3[客户端授权判断: visible="{= ${model>/role} === 'admin' }"]
-  F --> F4[敏感数据进前端模型: 密码/Token/内部 ID 存 JSONModel]
+  F --> F1["表达式拼接不可信数据"]
+  F --> F2["HTML 渲染控件 FormattedText HTML innerHTML"]
+  F --> F3["客户端授权判断 前端可见性控制"]
+  F --> F4["敏感数据进前端模型 密码 Token 内部 ID"]
   
   A --> G[Securing Apps 要点]
-  G --> G1[输出编码默认开启: 文本绑定自动 HTML 编码]
-  G --> G2[HTML 控件需显式净化: DOMPurify / sap.ui.core.util.sanitize]
-  G --> G3[授权决策仅服务端: 前端隐藏≠权限控制]
-  G --> G5[敏感数据不进前端: 密码/Token/Key 仅后端持有]
-  G --> G6[CSP/Trusted Types 兜底: 见浏览器安全组]
+  G --> G1["输出编码默认开启 文本绑定自动编码"]
+  G --> G2["HTML 控件需显式净化 DOMPurify"]
+  G --> G3["授权决策仅服务端 前端隐藏不等于权限控制"]
+  G --> G5["敏感数据不进前端 密码 Token Key 仅后端持有"]
+  G --> G6["CSP Trusted Types 兜底"]
 ```
 
 | 绑定场景 | 默认行为 | 风险 | 修复 |

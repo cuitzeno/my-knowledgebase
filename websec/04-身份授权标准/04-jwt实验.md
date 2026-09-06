@@ -14,30 +14,30 @@ nav_order: 4
 
 ```mermaid
 graph TD
-  A[JWT 实验四大漏洞] --> B[篡改 Payload (未校验签名)]
-  B --> B1[修改 role/user/exp 等声明]
-  B --> B2[不重新签名直接发回服务端]
-  B --> B3[脆弱实现: 只 JSON.parse 不验签 -> 越权成功]
+  A[JWT 实验四大漏洞] --> B["篡改 Payload 未校验签名"]
+  B --> B1["修改 role user exp 等声明"]
+  B --> B2["不重新签名直接发回服务端"]
+  B --> B3["脆弱实现 只解析不验签 越权成功"]
   
-  A --> C[alg=none 攻击]
-  C --> C1[Header 改 {"alg":"none","typ":"JWT"}]
-  C --> C2[删除签名段(第三段留空)]
-  C --> C3[脆弱实现: 接受无签名令牌]
+  A --> C["alg none 攻击"]
+  C --> C1["Header 改 alg none typ JWT"]
+  C --> C2["删除签名段 第三段留空"]
+  C --> C3["脆弱实现 接受无签名令牌"]
   
-  A --> D[弱密钥爆破 (HS256)]
-  D --> D1[用 john/hashcat/在线字典对签名离线爆破]
-  D --> D2[密钥为 secret/123456/key 等弱口令 -> 秒破]
-  D --> D3[破解后可自签任意 payload]
+  A --> D["弱密钥爆破 HS256"]
+  D --> D1["用字典对签名离线爆破"]
+  D --> D2["弱口令 secret 123456 秒破"]
+  D --> D3["破解后可自签任意 payload"]
   
   A --> E[过期不校验]
-  E --> E1[把 exp 改成远大于当前时间]
-  E --> E2[脆弱实现: 忽略 exp 仍信任]
+  E --> E1["把 exp 改成远未来时间"]
+  E --> E2["脆弱实现 忽略 exp 仍信任"]
   
   A --> F[正确防御]
-  F --> F1[白名单固定算法(禁 none)]
-  F --> F2[强随机密钥/非对称 RS256]
-  F --> F3[强制校验 exp/nbf/iss/aud]
-  F --> F4[按 scope/role 做服务端授权]
+  F --> F1["白名单固定算法 禁 none"]
+  F --> F2["强随机密钥 非对称 RS256"]
+  F --> F3["强制校验 exp nbf iss aud"]
+  F --> F4["按 scope role 做服务端授权"]
 ```
 
 ## 快速上手步骤

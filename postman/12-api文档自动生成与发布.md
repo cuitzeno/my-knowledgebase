@@ -14,28 +14,28 @@ nav_order: 12
 ```mermaid
 graph TD
   A[文档自动化流水线] --> B[集合定义]
-  B --> B1[请求: Method/URL/Params/Headers/Body/Authentication]
-  B --> B2[示例: Save Response / Save Example → 多示例(成功/错误/分页)]
-  B --> B3[描述: 请求/文件夹/集合级 Markdown 文档]
-  B --> B4[脚本: Pre-request/Tests 作为可执行规范]
+  B --> B1["请求: Method/URL/Params/Headers/Body/Authentication"]
+  B --> B2["示例: Save Response / Save Example → 多示例(成功/错误/分页)"]
+  B --> B3["描述: 请求/文件夹/集合级 Markdown 文档"]
+  B --> B4["脚本: Pre-request/Tests 作为可执行规范"]
   
   A --> C[文档生成引擎]
   C --> C1[解析集合结构 → 目录树]
-  C --> C2[渲染请求详情: 参数表/示例/代码片段]
-  C --> C3[渲染 Markdown: 标题/表格/代码块/图片/链接]
-  C --> C4[注入交互组件: Try It Out(发真实请求)/代码片段复制]
+  C --> C2["渲染请求详情: 参数表/示例/代码片段"]
+  C --> C3["渲染 Markdown: 标题/表格/代码块/图片/链接"]
+  C --> C4["注入交互组件: Try It Out(发真实请求)/代码片段复制"]
   
   A --> D[发布与分发]
-  D --> D1[公开链接: 谁有链接可看]
-  D --> D2[团队内部: Workspace 成员可见]
-  D --> D3[私有/密码保护: 企业版]
-  D --> D4[自定义域名/品牌/Logo/主题色]
-  D --> D5[版本管理: Publish v1/v2... / 默认版本]
+  D --> D1["公开链接: 谁有链接可看"]
+  D --> D2["团队内部: Workspace 成员可见"]
+  D --> D3["私有/密码保护: 企业版"]
+  D --> D4["自定义域名/品牌/Logo/主题色"]
+  D --> D5["版本管理: Publish v1/v2... / 默认版本"]
   
   A --> E[同步机制]
-  E --> E1[集合变更 → 文档自动更新(云端实时)]
+  E --> E1["集合变更 → 文档自动更新(云端实时)"]
   E --> E2[手动 Publish 新版本 → 旧版归档可回滚]
-  E --> E3[Webhook 通知: 文档更新触发下游(如门户同步)]
+  E --> E3["Webhook 通知: 文档更新触发下游(如门户同步)"]
 ```
 
 | 文档要素 | 来源 | 必填建议 |

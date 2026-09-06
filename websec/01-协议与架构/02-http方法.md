@@ -15,19 +15,19 @@ GET 和 POST 不只是"两种请求"。方法表达"想对资源做什么"，语
 ```mermaid
 graph TD
   A[HTTP 方法] --> B[安全方法 Safe Methods]
-  B --> B1[GET: 只读、幂等、可缓存]
-  B --> B2[HEAD: 只取头、无 Body]
-  B --> B3[OPTIONS: 探测能力]
-  B --> B4[TRACE: 回环测试(常禁用)]
+  B --> B1["GET: 只读、幂等、可缓存"]
+  B --> B2["HEAD: 只取头、无 Body"]
+  B --> B3["OPTIONS: 探测能力"]
+  B --> B4["TRACE: 回环测试(常禁用)"]
   
   A --> C[非安全方法 Unsafe Methods]
-  C --> C1[POST: 创建/提交、非幂等]
-  C --> C2[PUT: 整体替换、幂等]
-  C --> C3[PATCH: 部分更新、非幂等]
-  C --> C4[DELETE: 删除、幂等]
+  C --> C1["POST: 创建/提交、非幂等"]
+  C --> C2["PUT: 整体替换、幂等"]
+  C --> C3["PATCH: 部分更新、非幂等"]
+  C --> C4["DELETE: 删除、幂等"]
   
   C --> D[语义约定]
-  D --> D1[查用 GET/HEAD]
+  D --> D1["查用 GET/HEAD"]
   D --> D2[增用 POST]
   D --> D3[全改用 PUT]
   D --> D4[删用 DELETE]

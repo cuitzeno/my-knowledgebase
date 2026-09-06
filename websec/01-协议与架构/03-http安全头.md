@@ -15,18 +15,18 @@ nav_order: 3
 ```mermaid
 graph TD
   A[安全响应头] --> B[传输安全]
-  B --> B1[Strict-Transport-Security: 强制 HTTPS]
-  B --> B2[期望: 杜绝 SSL Strip 降级]
+  B --> B1["Strict-Transport-Security: 强制 HTTPS"]
+  B --> B2["期望: 杜绝 SSL Strip 降级"]
   
   A --> C[内容安全]
-  C --> C1[Content-Security-Policy: 白名单资源来源]
-  C --> C2[X-Content-Type-Options: 禁 MIME 嗅探]
-  C --> C3[X-Frame-Options / frame-ancestors: 反点击劫持]
+  C --> C1["Content-Security-Policy: 白名单资源来源"]
+  C --> C2["X-Content-Type-Options: 禁 MIME 嗅探"]
+  C --> C3["X-Frame-Options / frame-ancestors: 反点击劫持"]
   
   A --> D[隐私与能力]
-  D --> D1[Referrer-Policy: 控制 Referer 泄露]
-  D --> D2[Permissions-Policy: 限浏览器敏感 API]
-  D --> D3[Cross-Origin-*: 隔离跨域资源]
+  D --> D1["Referrer-Policy: 控制 Referer 泄露"]
+  D --> D2["Permissions-Policy: 限浏览器敏感 API"]
+  D --> D3["Cross-Origin-*: 隔离跨域资源"]
 ```
 
 ## 必配清单（速查表）

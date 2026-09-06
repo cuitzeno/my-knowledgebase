@@ -16,17 +16,17 @@ nav_order: 1
 graph TD
   A[同源策略 SOP] --> B[同源判定]
   B --> B1[协议+域名+端口 三者全同]
-  B --> B2[不同源: 默认禁止读响应/操作 DOM/存 Cookie]
+  B --> B2["不同源: 默认禁止读响应/操作 DOM/存 Cookie"]
   
   A --> C[CORS 机制]
-  C --> C1[简单请求: 直接发 + Origin 头]
-  C --> C2[预检请求: 非简单先发 OPTIONS 问权限]
-  C --> C3[响应头判定: ACAO/ACAC/ACAM/ACAH]
+  C --> C1["简单请求: 直接发 + Origin 头"]
+  C --> C2["预检请求: 非简单先发 OPTIONS 问权限"]
+  C --> C3["响应头判定: ACAO/ACAC/ACAM/ACAH"]
   
   A --> D[危险配置]
-  D --> D1[ACAO 反射任意 Origin + ACAC: true]
-  D --> D2[ACAO: * + ACAC: true (非法组合)]
-  D --> D3[子域泄露: ACAO: *.example.com]
+  D --> D1["ACAO 反射任意 Origin + ACAC: true"]
+  D --> D2["ACAO: * + ACAC: true (非法组合)"]
+  D --> D3["子域泄露: ACAO: *.example.com"]
 ```
 
 | CORS 头 | 作用 | 安全配置建议 |

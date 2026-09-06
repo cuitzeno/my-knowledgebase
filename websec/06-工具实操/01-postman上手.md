@@ -14,13 +14,13 @@ nav_order: 1
 
 ```mermaid
 graph TD
-  A[Postman 核心模型] --> B[Workspace: 项目隔离/团队协作]
-  A --> C[Collection: 请求分组+测试脚本+文档]
-  A --> D[Environment: 变量键值对(dev/stage/prod)]
-  A --> E[Variables 作用域链: Local > Data > Environment > Collection > Global]
-  A --> F[Tests/Scripts: pm.test/pm.expect/pm.variables.set/get]
-  A --> G[Runner/Monitor: 批量跑/定时监控/CI 集成]
-  A --> H[OAuth 2.0: Authorization Code/Client Credentials/Device Code/PKCE 原生支持]
+  A[Postman 核心模型] --> B["Workspace: 项目隔离/团队协作"]
+  A --> C["Collection: 请求分组+测试脚本+文档"]
+  A --> D["Environment: 变量键值对(dev/stage/prod)"]
+  A --> E["Variables 作用域链: Local > Data > Environment > Collection > Global"]
+  A --> F["Tests/Scripts: pm.test/pm.expect/pm.variables.set/get"]
+  A --> G["Runner/Monitor: 批量跑/定时监控/CI 集成"]
+  A --> H["OAuth 2.0: Authorization Code/Client Credentials/Device Code/PKCE 原生支持"]
 ```
 
 ## 快速上手步骤

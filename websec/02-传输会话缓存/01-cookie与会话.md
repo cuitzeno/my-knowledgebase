@@ -16,12 +16,11 @@ HTTP 无状态，靠 Cookie 记住"你是谁"。Cookie 的三个属性直接决�
 sequenceDiagram
   participant Browser as 浏览器
   participant Server as 服务器
-  
-  Browser->>Server: HTTP 请求 (无 Cookie)
-  Server-->>Browser: Set-Cookie: session=xyz; Secure; HttpOnly; SameSite=Lax; Path=/; Max-Age=3600
-  Browser->>Browser: 存 Cookie (符合属性)
-  Browser->>Server: 后续请求自动带 Cookie: session=xyz
-  Server-->>Server: 校验 Session → 识别用户
+  Browser->>Server: HTTP 请求 无 Cookie
+  Server-->>Browser: Set-Cookie session xyz Secure HttpOnly SameSite Lax
+  Browser->>Browser: 存 Cookie
+  Browser->>Server: 后续请求带 Cookie session xyz
+  Server-->>Server: 校验 Session 识别用户
 ```
 
 | 属性 | 作用 | 推荐值 | 缺失后果 |

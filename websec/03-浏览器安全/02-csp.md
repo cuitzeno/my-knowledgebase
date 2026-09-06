@@ -15,22 +15,22 @@ XSS 防不住时，CSP 是兜底：即使有恶意脚本，也不让它加载执
 ```mermaid
 graph TD
   A[CSP 指令族] --> B[资源加载控制]
-  B --> B1[default-src: 兜底]
-  B --> B2[script-src: 脚本来源(最关键)]
-  B --> B3[style-src: 样式来源]
-  B --> B4[img-src: 图片来源]
-  B --> B5[connect-src: fetch/XHR/WS 连接目标]
-  B --> B6[font-src/object-src/media-src/frame-src...]
+  B --> B1["default-src: 兜底"]
+  B --> B2["script-src: 脚本来源(最关键)"]
+  B --> B3["style-src: 样式来源"]
+  B --> B4["img-src: 图片来源"]
+  B --> B5["connect-src: fetch/XHR/WS 连接目标"]
+  B --> B6["font-src/object-src/media-src/frame-src..."]
   
-  A --> C[文档/导航控制]
-  C --> C1[base-uri: <base> 标签限制]
-  C --> C2[form-action: 表单提交目标]
-  C --> C3[frame-ancestors: 允许嵌套的父页面(替代 X-Frame-Options)]
+  A --> C["文档/导航控制"]
+  C --> C1["base-uri: <base> 标签限制"]
+  C --> C2["form-action: 表单提交目标"]
+  C --> C3["frame-ancestors: 允许嵌套的父页面(替代 X-Frame-Options)"]
   
   A --> D[报告与模式]
-  D --> D1[Content-Security-Policy: 强制模式(拦截+报告)]
-  D --> D2[Content-Security-Policy-Report-Only: 仅报告(调优用)]
-  D --> D3[report-to / report-uri: 违规上报端点]
+  D --> D1["Content-Security-Policy: 强制模式(拦截+报告)"]
+  D --> D2["Content-Security-Policy-Report-Only: 仅报告(调优用)"]
+  D --> D3["report-to / report-uri: 违规上报端点"]
 ```
 
 | 关键指令 | 推荐值 | 说明 |

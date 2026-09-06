@@ -13,30 +13,30 @@ nav_order: 11
 
 ```mermaid
 graph TD
-  A[CI/CD 集成两条路] --> B[Newman (经典)]
+  A["CI/CD 集成两条路"] --> B["Newman (经典)"]
   B --> B1[npm i -g newman]
   B --> B2[newman run coll.json -e env.json -d data.csv]
-  B --> B3[报告: --reporters cli,json,junit,htmlextra]
-  B --> B4[并行: --parallel 10 / --delay-request 100]
-  B --> B5[退出码: 0=全过 1=有失败 → 直接阻断流水线]
+  B --> B3["报告: --reporters cli,json,junit,htmlextra"]
+  B --> B4["并行: --parallel 10 / --delay-request 100"]
+  B --> B5["退出码: 0=全过 1=有失败 → 直接阻断流水线"]
   
-  A --> C[Postman CLI (新版)]
-  C --> C1[postman login --with-api-key $POSTMAN_API_KEY]
-  C --> C2[postman collection run <collection-id> -e <env-id>]
-  C --> C3[云同步: 无需导出文件、自动取最新集合/环境]
-  C --> C4[原生支持 Postman 11 新特性(Flows/Load Test/gRPC)]
-  C --> C5[postman collection ls / pull / push 管理资源]
+  A --> C["Postman CLI (新版)"]
+  C --> C1["postman login --with-api-key $POSTMAN_API_KEY"]
+  C --> C2["postman collection run <collection-id> -e <env-id>"]
+  C --> C3["云同步: 无需导出文件、自动取最新集合/环境"]
+  C --> C4["原生支持 Postman 11 新特性(Flows/Load Test/gRPC)"]
+  C --> C5["postman collection ls / pull / push 管理资源"]
   
-  D[主流 CI 平台接入] --> D1[GitHub Actions: .github/workflows/api-test.yml]
-  D --> D2[GitLab CI: .gitlab-ci.yml]
-  D --> D3[Jenkins: Pipeline + Newman 插件 / sh 步骤]
-  D --> D4[Azure DevOps / CircleCI / Bitbucket Pipelines: 同理]
+  D[主流 CI 平台接入] --> D1["GitHub Actions: .github/workflows/api-test.yml"]
+  D --> D2["GitLab CI: .gitlab-ci.yml"]
+  D --> D3["Jenkins: Pipeline + Newman 插件 / sh 步骤"]
+  D --> D4["Azure DevOps / CircleCI / Bitbucket Pipelines: 同理"]
   
-  E[最佳实践] --> E1[集合/环境文件入库(Git LFS 或脚本导出)]
+  E[最佳实践] --> E1["集合/环境文件入库(Git LFS 或脚本导出)"]
   E --> E2[敏感值用 CI Secrets 注入 → 环境变量 → 运行时替换]
-  E --> E3[矩阵测试: 多环境(dev/stage/prod) × 多版本集合]
-  E --> E4[制品上传: JUnit XML / HTML 报告 / Allure 结果]
-  E --> E5[门禁: required status check 保护 main 分支]
+  E --> E3["矩阵测试: 多环境(dev/stage/prod) × 多版本集合"]
+  E --> E4["制品上传: JUnit XML / HTML 报告 / Allure 结果"]
+  E --> E5["门禁: required status check 保护 main 分支"]
 ```
 
 | 工具 | 优势 | 适用场景 |

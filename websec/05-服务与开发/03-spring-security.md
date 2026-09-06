@@ -15,24 +15,24 @@ nav_order: 3
 ```mermaid
 graph TD
   A[Spring Security 核心] --> B[过滤器链 Filter Chain]
-  B --> B1[SecurityContextPersistenceFilter: 会话上下文]
-  B --> B2[UsernamePasswordAuthenticationFilter: 表单登录]
-  B --> B3[BasicAuthenticationFilter: Basic Auth]
-  B --> B4[BearerTokenAuthenticationFilter: JWT/OAuth2]
-  B --> B5[CsrfFilter: CSRF 保护]
-  B --> B6[CorsFilter: CORS 处理]
-  B --> B7[HeaderWriterFilter: 安全响应头]
-  B --> B8[ExceptionTranslationFilter: 认证/授权异常转 HTTP 码]
-  B --> B9[FilterSecurityInterceptor: URL/方法级授权拦截]
+  B --> B1["SecurityContextPersistenceFilter: 会话上下文"]
+  B --> B2["UsernamePasswordAuthenticationFilter: 表单登录"]
+  B --> B3["BasicAuthenticationFilter: Basic Auth"]
+  B --> B4["BearerTokenAuthenticationFilter: JWT/OAuth2"]
+  B --> B5["CsrfFilter: CSRF 保护"]
+  B --> B6["CorsFilter: CORS 处理"]
+  B --> B7["HeaderWriterFilter: 安全响应头"]
+  B --> B8["ExceptionTranslationFilter: 认证/授权异常转 HTTP 码"]
+  B --> B9["FilterSecurityInterceptor: URL/方法级授权拦截"]
   
   A --> C[认证 Authentication]
-  C --> C1[AuthenticationManager -> AuthenticationProvider -> UserDetailsService]
-  C --> C2[PasswordEncoder: bcrypt/Argon2/PBKDF2]
+  C --> C1["AuthenticationManager -> AuthenticationProvider -> UserDetailsService"]
+  C --> C2["PasswordEncoder: bcrypt/Argon2/PBKDF2"]
   
   A --> D[授权 Authorization]
-  D --> D1[URL 级: authorizeHttpRequests -> antMatchers/ regexMatchers]
-  D --> D2[方法级: @PreAuthorize/@PostAuthorize/@Secured + SpEL]
-  D --> D3[表达式: hasRole/hasAuthority/hasPermission/@bean.method()]
+  D --> D1["URL 级: authorizeHttpRequests -> antMatchers/ regexMatchers"]
+  D --> D2["方法级: @PreAuthorize/@PostAuthorize/@Secured + SpEL"]
+  D --> D3["表达式: hasRole/hasAuthority/hasPermission/@bean.method()"]
   
   A --> E[关键配置片段]
 ```

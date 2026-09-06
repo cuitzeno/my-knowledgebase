@@ -15,27 +15,27 @@ XSS 的根因是"把不可信数据当代码渲染"。DOM XSS 载荷只在浏览
 ```mermaid
 graph LR
   A[DOM XSS 攻击链] --> B[Source 污染源]
-  B --> B1[location.hash/search/href]
+  B --> B1["location.hash/search/href"]
   B --> B2[document.referrer]
-  B --> B3[document.cookie/localStorage]
+  B --> B3["document.cookie/localStorage"]
   B --> B4[postMessage 数据]
   
-  A --> C[Propagation 传播/转换]
-  C --> C1[字符串拼接/模板渲染]
+  A --> C["Propagation 传播/转换"]
+  C --> C1["字符串拼接/模板渲染"]
   C --> C2[DOM API 操作]
   
   A --> D[Sink 危险接收器]
-  D --> D1[innerHTML/outerHTML]
-  D --> D2[document.write/writeln]
-  D --> D3[eval/Function/setTimeout/setInterval]
-  D --> D4[location.href/assign/replace]
-  D --> D5[jQuery.html()/append()/$.parseHTML()]
+  D --> D1["innerHTML/outerHTML"]
+  D --> D2["document.write/writeln"]
+  D --> D3["eval/Function/setTimeout/setInterval"]
+  D --> D4["location.href/assign/replace"]
+  D --> D5["jQuery.html()/append()/$.parseHTML()"]
   
   A --> E[修复策略]
-  E --> E1[避免危险 Sink: 用 textContent 代替 innerHTML]
-  E --> E2[按上下文编码: HTML/JS/URL/CSS 编码函数]
-  E --> E3[CSP 兜底: script-src nonce/哈希]
-  E --> E4[可信类型 Trusted Types: 浏览器原生强制]
+  E --> E1["避免危险 Sink: 用 textContent 代替 innerHTML"]
+  E --> E2["按上下文编码: HTML/JS/URL/CSS 编码函数"]
+  E --> E3["CSP 兜底: script-src nonce/哈希"]
+  E --> E4["可信类型 Trusted Types: 浏览器原生强制"]
 ```
 
 | 类别 | Source 示例 | Sink 示例 | 修复 |

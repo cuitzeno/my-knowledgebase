@@ -14,22 +14,22 @@ nav_order: 8
 ```mermaid
 graph TD
   A[进阶测试三板斧] --> B[数据驱动 Data-Driven]
-  B --> B1[外部数据源: CSV/JSON 文件]
-  B --> B2[Runner 迭代: 每行数据 = 一次迭代]
-  B --> B3[脚本取值: pm.iterationData.get('col')]
-  B --> B4[动态参数化: URL/Header/Body 全能用 {{col}}]
+  B --> B1["外部数据源: CSV/JSON 文件"]
+  B --> B2["Runner 迭代: 每行数据 = 一次迭代"]
+  B --> B3["脚本取值: pm.iterationData.get('col')"]
+  B --> B4["动态参数化: URL/Header/Body 全能用 {{col}}"]
   
   A --> C[请求链 Request Chaining]
-  C --> C1[上游响应 -> 提取变量 -> pm.variables.set()]
-  C --> C2[下游请求 -> 引用变量 -> {{var}} / pm.variables.get()]
-  C --> C3[变量作用域: Local(迭代) > Data > Environment > Collection > Global]
-  C --> C4[典型链: 登录取 Token -> 建资源取 ID -> 改资源 -> 删资源 -> 校验列表]
+  C --> C1["上游响应 -> 提取变量 -> pm.variables.set()"]
+  C --> C2["下游请求 -> 引用变量 -> {{var}} / pm.variables.get()"]
+  C --> C3["变量作用域: Local(迭代) > Data > Environment > Collection > Global"]
+  C --> C4["典型链: 登录取 Token -> 建资源取 ID -> 改资源 -> 删资源 -> 校验列表"]
   
   A --> D[Schema 校验 Contract Validation]
-  D --> D1[定义 JSON Schema (Draft 2020-12)]
-  D --> D2[测试脚本: pm.response.to.have.jsonSchema(schema)]
-  D --> D3[失败详报: 缺字段/类型错/枚举越界/格式不符]
-  D --> D4[Schema 版本化: 随 API 版本走、Collection 级/Environment 级共享]
+  D --> D1["定义 JSON Schema (Draft 2020-12)"]
+  D --> D2["测试脚本: pm.response.to.have.jsonSchema(schema)"]
+  D --> D3["失败详报: 缺字段/类型错/枚举越界/格式不符"]
+  D --> D4["Schema 版本化: 随 API 版本走、Collection 级/Environment 级共享"]
 ```
 
 | 技术 | 核心 API | 典型场景 |

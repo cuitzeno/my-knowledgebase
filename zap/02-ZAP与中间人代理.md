@@ -13,11 +13,11 @@ ZAP (Zed Attack Proxy) 是 OWASP 旗下免费开源的 Web 应用渗透测试工
 
 ```mermaid
 graph LR
-  A[浏览器] -->|HTTP/HTTPS 请求| B[ZAP 代理 :8080]
+  A[浏览器] -->|HTTP/HTTPS 请求| B["ZAP 代理 :8080"]
   B -->|转发| C[目标站点]
   C -->|响应| B
   B -->|返回| A
-  B -.->|被动扫描/记录| D[(会话存储 HSQLDB)]
+  B -.->|被动扫描/记录| D["(会话存储 HSQLDB)"]
   B -.->|主动扫描/攻击| C
 ```
 

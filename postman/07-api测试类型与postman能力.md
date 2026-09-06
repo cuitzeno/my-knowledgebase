@@ -14,28 +14,28 @@ API 测试不止功能测试：还要覆盖**性能/安全/可靠性/兼容性/�
 ```mermaid
 graph TD
   A[API 测试六大类型] --> B[功能测试 Functional]
-  B --> B1[正向/逆向/边界/业务流]
-  B --> B2[Postman: pm.test() 断言状态码/字段/Schema/响应时间]
+  B --> B1["正向/逆向/边界/业务流"]
+  B --> B2["Postman: pm.test() 断言状态码/字段/Schema/响应时间"]
   
   A --> C[契约测试 Contract]
-  C --> C1[请求/响应符合 OpenAPI Schema]
-  C --> C2[Postman: pm.response.to.have.jsonSchema() + Mock Server 验证]
+  C --> C1["请求/响应符合 OpenAPI Schema"]
+  C --> C2["Postman: pm.response.to.have.jsonSchema() + Mock Server 验证"]
   
   A --> D[性能测试 Performance]
-  D --> D1[基准/负载/压力/尖峰/稳定性]
-  D --> D2[Postman 11: Load Test(虚拟用户/并发/阶梯加压) / Newman 并行跑近似]
+  D --> D1["基准/负载/压力/尖峰/稳定性"]
+  D --> D2["Postman 11: Load Test(虚拟用户/并发/阶梯加压) / Newman 并行跑近似"]
   
   A --> E[安全测试 Security]
-  E --> E1[认证/授权/注入/敏感信息/配置错误]
-  E --> E2[Postman: 安全测试集合(注入Payload/越权/弱鉴权) + CI 门禁]
+  E --> E1["认证/授权/注入/敏感信息/配置错误"]
+  E --> E2["Postman: 安全测试集合(注入Payload/越权/弱鉴权) + CI 门禁"]
   
-  A --> F[可靠性/混沌 Reliability]
-  F --> F1[超时/重试/熔断/降级/网络分区]
-  F --> F2[Postman: 测试脚本模拟故障注入 + Monitor 长期观测]
+  A --> F["可靠性/混沌 Reliability"]
+  F --> F1["超时/重试/熔断/降级/网络分区"]
+  F --> F2["Postman: 测试脚本模拟故障注入 + Monitor 长期观测"]
   
-  A --> G[兼容性/版本 Compatibility]
-  G --> G1[协议版本/数据格式/客户端版本向前/向后兼容]
-  G --> G2[Postman: 多 Environment 跑同一集合 + 版本化 Collection]
+  A --> G["兼容性/版本 Compatibility"]
+  G --> G1["协议版本/数据格式/客户端版本向前/向后兼容"]
+  G --> G2["Postman: 多 Environment 跑同一集合 + 版本化 Collection"]
 ```
 
 | 测试类型 | 目标 | Postman 核心工具 | 典型指标 |

@@ -14,18 +14,18 @@ nav_order: 3
 
 ```mermaid
 graph TD
-  A[ZAP 核心流程] --> B[代理配置: 127.0.0.1:8080 + CA 证书]
-  A --> C[爬取 Spider: 传统/AJAX 发现端点]
-  A --> D[被动扫描: 流量经过即分析，安全无副作用]
-  A --> E[主动扫描 Active Scan: 发攻击包验证漏洞(需授权)]
-  A --> F[告警 Alerts: High/Medium/Low/Info 分级 + 证据]
-  A --> G[报告导出: HTML/JSON/Markdown]
+  A[ZAP 核心流程] --> B["代理配置: 127.0.0.1:8080 + CA 证书"]
+  A --> C["爬取 Spider: 传统/AJAX 发现端点"]
+  A --> D["被动扫描: 流量经过即分析，安全无副作用"]
+  A --> E["主动扫描 Active Scan: 发攻击包验证漏洞(需授权)"]
+  A --> F["告警 Alerts: High/Medium/Low/Info 分级 + 证据"]
+  A --> G["报告导出: HTML/JSON/Markdown"]
   
-  B --> H[Safe Mode: 仅被动，防误伤]
-  C --> I[传统 Spider: 读 HTML 链接，快]
-  C --> J[AJAX Spider: 真浏览器渲染 JS，慢、需配置]
-  E --> K[扫描策略: 强度/速度/排除项/自定义规则]
-  F --> L[证据: 请求/响应/触发片段高亮]
+  B --> H["Safe Mode: 仅被动，防误伤"]
+  C --> I["传统 Spider: 读 HTML 链接，快"]
+  C --> J["AJAX Spider: 真浏览器渲染 JS，慢、需配置"]
+  E --> K["扫描策略: 强度/速度/排除项/自定义规则"]
+  F --> L["证据: 请求/响应/触发片段高亮"]
 ```
 
 ## 快速上手步骤

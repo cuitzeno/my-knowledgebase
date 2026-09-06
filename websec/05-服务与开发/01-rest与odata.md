@@ -14,22 +14,22 @@ nav_order: 1
 
 ```mermaid
 graph TD
-  A[REST 核心] --> B[资源: 名词 URL (/books /books/123)]
-  A --> C[方法: GET/POST/PUT/PATCH/DELETE 表达 CRUD]
-  A --> D[无状态: 每请求带凭证，服务端不存会话上下文]
-  A --> E[统一接口: 标准状态码/内容协商/超媒体(HATEOAS)]
+  A[REST 核心] --> B["资源: 名词 URL (/books /books/123)"]
+  A --> C["方法: GET/POST/PUT/PATCH/DELETE 表达 CRUD"]
+  A --> D["无状态: 每请求带凭证，服务端不存会话上下文"]
+  A --> E["统一接口: 标准状态码/内容协商/超媒体(HATEOAS)"]
   
-  F[OData v2/v4 在 REST 之上] --> G[$metadata: 暴露实体模型/类型/导航属性]
-  F --> H[$filter: 过滤 (Price lt 100, Category eq 'Book')]
-  F --> I[$expand: 关联展开 (/Orders?$expand=Items)]
-  F --> J[$select: 投影 (/Products?$select=Name,Price)]
-  F --> K[$top/$skip/$orderby: 分页排序]
-  F --> L[$count/$inlinecount: 总数]
+  F["OData v2/v4 在 REST 之上"] --> G["$metadata: 暴露实体模型/类型/导航属性"]
+  F --> H["$filter: 过滤 (Price lt 100, Category eq 'Book')"]
+  F --> I["$expand: 关联展开 (/Orders?$expand=Items)"]
+  F --> J["$select: 投影 (/Products?$select=Name,Price)"]
+  F --> K["$top/$skip/$orderby: 分页排序"]
+  F --> L["$count/$inlinecount: 总数"]
   
-  M[安全关注点] --> M1[越权/BOLA: 改 ID/查询条件访问他人数据]
-  M --> M2[注入: $filter 拼接未校验输入 -> OData/后端注入]
-  M --> M3[过度暴露: 默认返回全字段/关联数据]
-  M --> M4[元数据泄露: $metadata 暴露模型，助攻击者构造请求]
+  M[安全关注点] --> M1["越权/BOLA: 改 ID/查询条件访问他人数据"]
+  M --> M2["注入: $filter 拼接未校验输入 -> OData/后端注入"]
+  M --> M3["过度暴露: 默认返回全字段/关联数据"]
+  M --> M4["元数据泄露: $metadata 暴露模型，助攻击者构造请求"]
 ```
 
 | OData 查询选项 | 示例 | 风险 |

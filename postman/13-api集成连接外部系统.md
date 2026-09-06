@@ -14,28 +14,28 @@ nav_order: 13
 ```mermaid
 graph TD
   A[集成验证三板斧] --> B[每系统一集合]
-  B --> B1[外部系统 A: 支付/短信/地图/CRM/ERP]
-  B --> B2[内部微服务 B: 用户/订单/库存/通知]
-  B --> B3[统一管理: 端点/认证/Schema/测试/文档]
+  B --> B1["外部系统 A: 支付/短信/地图/CRM/ERP"]
+  B --> B2["内部微服务 B: 用户/订单/库存/通知"]
+  B --> B3["统一管理: 端点/认证/Schema/测试/文档"]
   
   A --> C[环境变量隔离]
-  C --> C1[dev/stage/prod 各一套 Environment]
-  C --> C2[变量: base_url / client_id / client_secret / api_key / webhook_secret]
+  C --> C1["dev/stage/prod 各一套 Environment"]
+  C --> C2["变量: base_url / client_id / client_secret / api_key / webhook_secret"]
   C --> C3[CI Secrets 注入 → 运行时替换占位符]
   
   A --> D[请求链串数据流]
-  D --> D1[上游响应 → 提取关键字段 → pm.variables.set()]
-  D --> D2[下游请求 → 引用变量 {{var}}]
-  D --> D3[典型链: 下单 → 支付回调 → 扣库存 → 发通知 → 回调确认]
+  D --> D1["上游响应 提取关键字段 pm variables set"]
+  D --> D2["下游请求 引用变量 var"]
+  D --> D3["典型链 下单 支付回调 扣库存 发通知 回调确认"]
   
   A --> E[Webhook 双向验证]
-  E --> E1[出站: Monitor 向你的 Webhook 发请求 → 验证签名/幂等/重试]
-  E --> E2[入站: 本地起接收端(ngrok/Cloudflare Tunnel) → 验证回调格式/签名/处理逻辑]
+  E --> E1["出站: Monitor 向你的 Webhook 发请求 → 验证签名/幂等/重试"]
+  E --> E2["入站: 本地起接收端(ngrok/Cloudflare Tunnel) → 验证回调格式/签名/处理逻辑"]
   
   A --> F[Flows 可视化编排]
-  F --> F1[拖拽 Send Request/Variable/Condition/Loop/Script]
-  F --> F2[作为集成演示/轻量编排/非开发同事评审]
-  F --> F3[可导出为集合/在 CI 跑]
+  F --> F1["拖拽 Send Request/Variable/Condition/Loop/Script"]
+  F --> F2["作为集成演示/轻量编排/非开发同事评审"]
+  F --> F3["可导出为集合/在 CI 跑"]
 ```
 
 | 集成场景 | 典型链路 | Postman 验证重点 |

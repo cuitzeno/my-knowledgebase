@@ -15,23 +15,23 @@ JWT 是现代 API 鉴权主流令牌：三段 `header.payload.signature` (Base64
 ```mermaid
 graph LR
   A[JWT 结构] --> B[Header]
-  B --> B1[alg: HS256/RS256/ES256...]
-  B --> B2[typ: JWT]
+  B --> B1["alg HS256 RS256 ES256"]
+  B --> B2["typ JWT"]
   
   A --> C[Payload Claims]
-  C --> C1[注册声明: sub/iss/exp/nbf/iat/aud/jti]
-  C --> C2[公共声明: role/scope/permissions/email...]
-  C --> C3[私有声明: 业务自定义]
+  C --> C1["注册声明 sub iss exp nbf iat aud jti"]
+  C --> C2["公共声明 role scope permissions"]
+  C --> C3["私有声明 业务自定义"]
   
   A --> D[Signature]
-  D --> D1[HS256: HMAC-SHA256(key, base64(header)+"."+base64(payload))]
-  D --> D2[RS256: RSA-SHA256(private_key, ...)]
-  D --> D3[验证: 服务端用 key/public_key 验签 -> 信任 payload]
+  D --> D1["HS256 HMAC SHA256 验签"]
+  D --> D2["RS256 RSA SHA256 私钥签名"]
+  D --> D3["验证 服务端验签后信任 payload"]
   
   A --> E[Scopes 授权]
-  E --> E1[payload: {"scope":"read:profile write:orders"}]
-  E --> E2[服务端按 scope 校验: 访问 /api/orders 需 write:orders]
-  E --> E3[最小授权: 用户同意/收缩 scope -> 令牌仅含所需权限]
+  E --> E1["payload scope 读配置 写订单"]
+  E --> E2["服务端按 scope 校验 需 write orders"]
+  E --> E3["最小授权 收缩 scope 仅含所需权限"]
 ```
 
 | 算法类型 | 典型算法 | 密钥管理 | 适用场景 |

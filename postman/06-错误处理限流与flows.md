@@ -14,21 +14,21 @@ nav_order: 6
 ```mermaid
 graph TD
   A[API 治理三件套] --> B[统一错误处理]
-  B --> B1[全局异常捕获 -> 统一结构]
-  B --> B2[错误码分层: 业务码+HTTP 码+用户提示+内部追踪ID]
-  B --> B3[敏感信息脱敏: 不返回堆栈/SQL/密钥]
+  B --> B1["全局异常捕获 -> 统一结构"]
+  B --> B2["错误码分层: 业务码+HTTP 码+用户提示+内部追踪ID"]
+  B --> B3["敏感信息脱敏: 不返回堆栈/SQL/密钥"]
   
   A --> C[限流 Rate Limiting]
-  C --> C1[算法: 固定窗口/滑动窗口/令牌桶/漏桶]
-  C --> C2[维度: IP/用户/API Key/租户/端点]
-  C --> C3[响应: 429 + Retry-After + X-RateLimit-* 头]
-  C --> C4[分布式: Redis + Lua 脚本/Redis Cell]
+  C --> C1["算法: 固定窗口/滑动窗口/令牌桶/漏桶"]
+  C --> C2["维度: IP/用户/API Key/租户/端点"]
+  C --> C3["响应: 429 + Retry-After + X-RateLimit-* 头"]
+  C --> C4["分布式: Redis + Lua 脚本/Redis Cell"]
   
   A --> D[Postman Flows 可视化编排]
-  D --> D1[块: Send Request / Variable / Condition / Loop / Script / Output]
-  D --> D2[连线: 数据流(变量传递) + 控制流(条件/循环)]
-  D --> D3[运行: 本地/云端/定时/CLI]
-  D --> D4[用例: 登录链、数据清洗、端到端业务流、报告生成]
+  D --> D1["块: Send Request / Variable / Condition / Loop / Script / Output"]
+  D --> D2["连线: 数据流(变量传递) + 控制流(条件/循环)"]
+  D --> D3["运行: 本地/云端/定时/CLI"]
+  D --> D4["用例: 登录链、数据清洗、端到端业务流、报告生成"]
 ```
 
 | 组件 | 核心配置 | Postman 实现 |

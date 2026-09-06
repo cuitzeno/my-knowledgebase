@@ -22,14 +22,14 @@ graph LR
   A --> H[版本 Version]
   A --> I[退役 Retire]
   
-  B --> B1[需求/契约评审]
-  C --> C1[OpenAPI/Swagger 定义<br/>Mock Server 并行开发]
-  D --> D1[本地联调/环境变量<br/>代码片段生成]
-  E --> E1[功能/契约/性能/安全测试<br/>Test Scripts + Runner]
-  F --> F1[Newman/Postman CLI 接 CI/CD]
-  G --> G1[Monitor 定时跑集合<br/>告警/可用性/SLA]
-  H --> H1[环境/集合版本管理<br/>变更日志/回滚]
-  I --> I1[弃用策略/文档归档<br/>流量迁移验证]
+  B --> B1["需求/契约评审"]
+  C --> C1["OpenAPI/Swagger 定义<br/>Mock Server 并行开发"]
+  D --> D1["本地联调/环境变量<br/>代码片段生成"]
+  E --> E1["功能/契约/性能/安全测试<br/>Test Scripts + Runner"]
+  F --> F1["Newman/Postman CLI 接 CI/CD"]
+  G --> G1["Monitor 定时跑集合<br/>告警/可用性/SLA"]
+  H --> H1["环境/集合版本管理<br/>变更日志/回滚"]
+  I --> I1["弃用策略/文档归档<br/>流量迁移验证"]
 ```
 
 | 阶段 | Postman 核心能力 | 产出物 |

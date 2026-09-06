@@ -13,13 +13,13 @@ nav_order: 3
 
 ```mermaid
 graph TD
-  A[API 设计流程] --> B[需求分析 -> 资源建模]
+  A[API 设计流程] --> B["需求分析 -> 资源建模"]
   B --> C[OpenAPI 编写]
-  C --> C1[Info: 版本/标题/联系人]
-  C --> C2[Servers: base_url 列表]
-  C --> C3[Paths: 端点+方法+参数+响应]
-  C --> C4[Components: Schemas/Parameters/Responses/Headers/Examples/SecuritySchemas 复用]
-  C --> C5[Security: 全局/操作级鉴权要求]
+  C --> C1["Info: 版本/标题/联系人"]
+  C --> C2["Servers: base_url 列表"]
+  C --> C3["Paths: 端点+方法+参数+响应"]
+  C --> C4["Components: Schemas/Parameters/Responses/Headers/Examples/SecuritySchemas 复用"]
+  C --> C5["Security: 全局/操作级鉴权要求"]
   
   A --> D[Mock Server 生成]
   D --> D1[Postman 基于 Schema 自动生成示例响应]
@@ -30,7 +30,7 @@ graph TD
   E --> E1[自动生成文档]
   E --> E2[Test Scripts Schema 校验]
   E --> E3[代码生成]
-  E --> E4[CI/CD 契约测试]
+  E --> E4["CI/CD 契约测试"]
 ```
 
 | 设计原则 | 规范做法 | 反例 |

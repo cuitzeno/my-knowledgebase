@@ -14,16 +14,16 @@ nav_order: 4
 ```mermaid
 graph LR
   A[Postman 请求] --> B[Flask 路由分发]
-  B --> C[内存存储 / 数据库]
+  B --> C["内存存储 / 数据库"]
   C --> D[业务逻辑]
   D --> E[JSON 响应]
   E --> A
   
   subgraph Flask 最小应用
-    F[app = Flask(__name__)]
-    G[@app.route('/books', methods=['GET','POST'])]
-    H[@app.route('/books/<id>', methods=['GET','PUT','DELETE'])]
-    I[内存列表 books = []]
+    F["app Flask 初始化"]
+    G["路由 books GET POST"]
+    H["路由 books id GET PUT DELETE"]
+    I["内存列表 books"]
   end
 ```
 
