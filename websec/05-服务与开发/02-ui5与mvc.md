@@ -80,7 +80,7 @@ graph TD
 
 | 维度 | SAPUI5 / OpenUI5 | React | Vue 3 | Angular |
 |------|------------------|-------|-------|---------|
-| 默认输出编码 | 文本绑定✅ / HTML控件❌ | JSX 自动编码✅ / dangerouslySetInnerHTML❌ | 插值 `{{}}` 编码✅ / v-html❌ | 插值编码✅ / innerHTML❌ |
+| 默认输出编码 | 文本绑定✅ / HTML控件❌ | JSX 自动编码✅ / dangerouslySetInnerHTML❌ | 插值 {% raw %}`{{}}`{% endraw %} 编码✅ / v-html❌ | 插值编码✅ / innerHTML❌ |
 | HTML 净化 | DOMPurify / 内置 sanitize | DOMPurify / sanitize-html | DOMPurify / vue-sanitize | DomSanitizer |
 | 客户端授权风险 | 表达式绑定易绕过 | 条件渲染易绕过 | v-if/v-show 易绕过 | *ngIf 易绕过 |
 | Trusted Types 支持 | 需配合 CSP | 原生支持 | 原生支持 | 原生支持 |
